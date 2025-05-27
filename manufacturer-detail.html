@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detail výrobcu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main.manufacturer-detail {
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .manufacturer-detail img {
+      max-width: 200px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 1rem 0;
+      color: #4fa3ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="manufacturerName">Výrobca</h1>
+  </header>
+
+  <main class="manufacturer-detail">
+    <a href="manufacturers.html" class="back-link">← Späť na zoznam</a>
+    <img id="manufacturerLogo" src="" alt="Logo výrobcu" />
+    <p><strong>Krajina:</strong> <span id="manufacturerCountry"></span></p>
+    <p><strong>Typy zbraní:</strong> <span id="manufacturerTypes"></span></p>
+    <p><strong>Popis:</strong></p>
+    <p id="manufacturerDescription"></p>
+  </main>
+
+  <script>
+    // Získaj názov z URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+
+    // Načítať zoznam výrobcov
+    fetch('manufacturers.json')
+      .then(res => res.json())
+      .then(data => {
+        const manufacturer = data.find(m => m.name === name);
+        if (manufacturer) {
+          document.getElementById('manufacturerName').textContent = manufacturer.name;
+          document.getElementById('manufacturerLogo').src = manufacturer.logo;
+          document.getElementById('manufacturerLogo').alt = manufacturer.name;
+          document.getElementById('manufacturerCountry').textContent = manufacturer.country;
+          document.getElementById('manufacturerTypes').textContent = manufacturer.weaponTypes.join(', ');
+          document.getElementById('manufacturerDescription').textContent = manufacturer.description || 'Nie je k dispozícii.';
+        } else {
+          document.querySelector('main').innerHTML = '<p>Výrobca nebol nájdený.</p>';
+        }
+      });
+  </script>
+</body>
+</html>
