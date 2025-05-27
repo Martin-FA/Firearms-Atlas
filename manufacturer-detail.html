@@ -25,6 +25,34 @@
       margin: 1rem 0;
       color: #4fa3ff;
     }
+    .gun-list {
+      margin-top: 2rem;
+    }
+    .gun-card {
+      background-color: #2a2a2a;
+      border-radius: 1rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .gun-card img {
+      width: 100px;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    .gun-info {
+      flex-grow: 1;
+    }
+    .gun-info h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .gun-info p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -39,18 +67,22 @@
     <p><strong>Typy zbraní:</strong> <span id="manufacturerTypes"></span></p>
     <p><strong>Popis:</strong></p>
     <p id="manufacturerDescription"></p>
+
+    <div class="gun-list" id="gunList">
+      <h2>Zbrane od tohto výrobcu:</h2>
+      <div id="gunCardsContainer"></div>
+    </div>
   </main>
 
   <script>
-    // Získaj názov z URL
     const urlParams = new URLSearchParams(window.location.search);
     const name = urlParams.get('name');
 
-    // Načítať zoznam výrobcov
+    // Načítaj údaje výrobcu
     fetch('manufacturers.json')
       .then(res => res.json())
-      .then(data => {
-        const manufacturer = data.find(m => m.name === name);
+      .then(manufacturers => {
+        const manufacturer = manufacturers.find(m => m.name === name);
         if (manufacturer) {
           document.getElementById('manufacturerName').textContent = manufacturer.name;
           document.getElementById('manufacturerLogo').src = manufacturer.logo;
@@ -58,6 +90,32 @@
           document.getElementById('manufacturerCountry').textContent = manufacturer.country;
           document.getElementById('manufacturerTypes').textContent = manufacturer.weaponTypes.join(', ');
           document.getElementById('manufacturerDescription').textContent = manufacturer.description || 'Nie je k dispozícii.';
+
+          // Načítaj a vyfiltruj zbrane od tohto výrobcu
+          fetch('guns.json')
+            .then(res => res.json())
+            .then(guns => {
+              const manufacturerGuns = guns.filter(gun => gun.manufacturer === manufacturer.name);
+              const container = document.getElementById('gunCardsContainer');
+
+              if (manufacturerGuns.length > 0) {
+                manufacturerGuns.forEach(gun => {
+                  const card = document.createElement('div');
+                  card.className = 'gun-card';
+                  card.innerHTML = `
+                    <img src="${gun.image}" alt="${gun.name}">
+                    <div class="gun-info">
+                      <h3>${gun.name}</h3>
+                      <p><strong>Kaliber:</strong> ${gun.caliber}</p>
+                      <p><strong>Kategória:</strong> ${gun.category}</p>
+                    </div>
+                  `;
+                  container.appendChild(card);
+                });
+              } else {
+                container.innerHTML = '<p>Tento výrobca zatiaľ nemá žiadne záznamy o zbraniach.</p>';
+              }
+            });
         } else {
           document.querySelector('main').innerHTML = '<p>Výrobca nebol nájdený.</p>';
         }
