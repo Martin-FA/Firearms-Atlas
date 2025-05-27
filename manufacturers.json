@@ -2,19 +2,36 @@
   {
     "name": "FN Herstal",
     "country": "Belgicko",
-    "weaponTypes": ["Pištole", "Útočné pušky", "Guľomety"],
-    "logo": "images/fn-herstal.png"
+    "weaponTypes": ["Pistole", "Útočné pušky"],
+    "logo": "images/fnherstal.png",
+    "description": "FN Herstal je belgický výrobca ručných zbraní s dlhou históriou. Ich produkty sú známe spoľahlivosťou a využívané sú v mnohých armádach po celom svete."
   },
   {
     "name": "Heckler & Koch",
     "country": "Nemecko",
-    "weaponTypes": ["Pištole", "Útočné pušky", "Samopaly"],
-    "logo": "images/hk-logo.png"
+    "weaponTypes": ["Pistole", "Útočné pušky", "Samopaly"],
+    "logo": "images/hk.png",
+    "description": "Heckler & Koch je popredný nemecký výrobca známy zbraňami ako MP5, G36 alebo USP. Firma dodáva zbrane ozbrojeným silám aj polícii."
   },
   {
     "name": "Colt's Manufacturing Company",
     "country": "USA",
-    "weaponTypes": ["Revolvery", "Pištole", "Karabíny"],
-    "logo": "images/colt.png"
+    "weaponTypes": ["Revolvery", "Pistole", "Pušky"],
+    "logo": "images/colt.png",
+    "description": "Colt je legendárna americká spoločnosť, známa historickými revolvermi a ikonickým M1911. Hrá významnú rolu v histórii zbrojárskeho priemyslu."
+  },
+  {
+    "name": "Izhmash (Kalashnikov Concern)",
+    "country": "Rusko",
+    "weaponTypes": ["Útočné pušky", "Pušky", "Samopaly"],
+    "logo": "images/kalashnikov.png",
+    "description": "Kalashnikov Concern je najväčší ruský výrobca zbraní, známy najmä puškou AK-47. Výrobca má bohatú tradíciu a rozsiahly výskum v oblasti ručných zbraní."
+  },
+  {
+    "name": "Česká zbrojovka Uherský Brod (CZUB)",
+    "country": "Česká republika",
+    "weaponTypes": ["Pistole", "Pušky"],
+    "logo": "images/czub.png",
+    "description": "CZUB je popredný český výrobca známy pištoľami CZ 75 a modernými puškami pre ozbrojené zložky a civilný trh."
   }
 ]
