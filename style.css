@@ -1,51 +1,144 @@
-.weapon-card {
-  background-color: #1e1e1e;
-  color: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  overflow: hidden;
-  margin: 16px;
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+/* Základné nastavenia */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.weapon-image {
+header, nav {
+  background-color: #1f1f1f;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* Štýl kariet */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-bottom: 1px solid #333;
 }
 
-.weapon-info {
-  padding: 16px;
+.card-content {
+  padding: 12px 16px;
 }
 
-.weapon-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 8px;
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
 }
 
-.weapon-manufacturer,
-.weapon-caliber,
-.weapon-category {
-  font-size: 14px;
+.card-content p {
   margin: 4px 0;
+  font-size: 0.95em;
+  color: #bbb;
 }
 
-.view-more-button {
-  margin-top: 12px;
-  padding: 12px;
-  background-color: #ff5722;
-  color: white;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
+button {
+  display: block;
   width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.view-more-button:hover {
-  background-color: #e64a19;
+
+button:hover {
+  background-color: #21867a;
+}
+
+/* Vyhľadávací a filter panel */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filters input,
+.filters select {
+  flex: 1;
+  min-width: 160px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.language-switcher img {
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #333;
+  transition: transform 0.1s;
+}
+
+.language-switcher img:hover {
+  transform: scale(1.1);
+}
+
+/* Responzívne */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.3em;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .card-content h3 {
+    font-size: 1em;
+  }
+
+  .card-content p {
+    font-size: 0.85em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
 }
