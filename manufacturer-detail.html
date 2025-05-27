@@ -1,125 +1,43 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Detail výrobcu</title>
+  <title>Manufacturer Detail – Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    main.manufacturer-detail {
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem;
-      background-color: #1e1e1e;
-      color: #f0f0f0;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    }
-    .manufacturer-detail img {
-      max-width: 200px;
-      display: block;
-      margin-bottom: 1rem;
-    }
-    .back-link {
-      display: inline-block;
-      margin: 1rem 0;
-      color: #4fa3ff;
-    }
-    .gun-list {
-      margin-top: 2rem;
-    }
-    .gun-card {
-      background-color: #2a2a2a;
-      border-radius: 1rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-    .gun-card img {
-      width: 100px;
-      height: auto;
-      border-radius: 0.5rem;
-    }
-    .gun-info {
-      flex-grow: 1;
-    }
-    .gun-info h3 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-    .gun-info p {
-      margin: 0.3rem 0;
-      font-size: 0.9rem;
-    }
-  </style>
+  <script defer src="lang.js"></script>
+  <script defer src="manufacturer-detail.js"></script>
 </head>
 <body>
-  <header>
-    <h1 id="manufacturerName">Výrobca</h1>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
+      <h1 class="title">Firearms Atlas</h1>
+    </div>
+    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
   </header>
 
-  <main class="manufacturer-detail">
-    <a href="manufacturers.html" class="back-link">← Späť na zoznam</a>
-    <img id="manufacturerLogo" src="" alt="Logo výrobcu" />
-    <p><strong>Krajina:</strong> <span id="manufacturerCountry"></span></p>
-    <p><strong>Typy zbraní:</strong> <span id="manufacturerTypes"></span></p>
-    <p><strong>Popis:</strong></p>
-    <p id="manufacturerDescription"></p>
-
-    <div class="gun-list" id="gunList">
-      <h2>Zbrane od tohto výrobcu:</h2>
-      <div id="gunCardsContainer"></div>
-    </div>
+  <main id="manufacturerDetail" class="detail-container">
+    <!-- Dynamický obsah sa zobrazí z JS -->
   </main>
 
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name');
-
-    // Načítaj údaje výrobcu
-    fetch('manufacturers.json')
-      .then(res => res.json())
-      .then(manufacturers => {
-        const manufacturer = manufacturers.find(m => m.name === name);
-        if (manufacturer) {
-          document.getElementById('manufacturerName').textContent = manufacturer.name;
-          document.getElementById('manufacturerLogo').src = manufacturer.logo;
-          document.getElementById('manufacturerLogo').alt = manufacturer.name;
-          document.getElementById('manufacturerCountry').textContent = manufacturer.country;
-          document.getElementById('manufacturerTypes').textContent = manufacturer.weaponTypes.join(', ');
-          document.getElementById('manufacturerDescription').textContent = manufacturer.description || 'Nie je k dispozícii.';
-
-          // Načítaj a vyfiltruj zbrane od tohto výrobcu
-          fetch('guns.json')
-            .then(res => res.json())
-            .then(guns => {
-              const manufacturerGuns = guns.filter(gun => gun.manufacturer === manufacturer.name);
-              const container = document.getElementById('gunCardsContainer');
-
-              if (manufacturerGuns.length > 0) {
-                manufacturerGuns.forEach(gun => {
-                  const card = document.createElement('div');
-                  card.className = 'gun-card';
-                  card.innerHTML = `
-                    <img src="${gun.image}" alt="${gun.name}">
-                    <div class="gun-info">
-                      <h3>${gun.name}</h3>
-                      <p><strong>Kaliber:</strong> ${gun.caliber}</p>
-                      <p><strong>Kategória:</strong> ${gun.category}</p>
-                    </div>
-                  `;
-                  container.appendChild(card);
-                });
-              } else {
-                container.innerHTML = '<p>Tento výrobca zatiaľ nemá žiadne záznamy o zbraniach.</p>';
-              }
-            });
-        } else {
-          document.querySelector('main').innerHTML = '<p>Výrobca nebol nájdený.</p>';
-        }
-      });
-  </script>
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Choose language</h2>
+      <ul class="flag-list">
+        <li onclick="setLanguage('en')">🇬🇧 English</li>
+        <li onclick="setLanguage('sk')">🇸🇰 Slovensky</li>
+        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
+        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
+        <li onclick="setLanguage('es')">🇪🇸 Español</li>
+        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
+        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
+        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
+        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
+      </ul>
+      <button onclick="closeLanguageModal()" data-translate="back">Back</button>
+    </div>
+  </div>
 </body>
 </html>
+
