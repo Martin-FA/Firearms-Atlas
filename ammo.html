@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-translate="ammo">Strelivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-translate="ammo">Ammunition</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="lang.js"></script>
   <script defer src="ammo.js"></script>
 </head>
 <body onload="translatePage(); loadAmmo();">
-  <header>
-    <h1 data-translate="ammo">Strelivo</h1>
-    <div class="language-switcher">
-      <button onclick="setLanguage('sk')">🇸🇰</button>
-      <button onclick="setLanguage('en')">🇬🇧</button>
-      <button onclick="setLanguage('de')">🇩🇪</button>
-      <button onclick="setLanguage('pl')">🇵🇱</button>
-    </div>
+
+  <header class="app-header">
+    <h1 data-translate="appName">Firearms Atlas</h1>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="index.html" data-translate="firearms">Firearms</a></li>
+        <li><a href="manufacturers.html" data-translate="manufacturers">Manufacturers</a></li>
+        <li><a href="ammo.html" data-translate="ammo">Ammunition</a></li>
+      </ul>
+      <div class="language-dropdown">
+        <button class="lang-btn">🌐 English ▼</button>
+        <div class="language-options">
+          <button onclick="setLanguage('en')">🇬🇧 English</button>
+          <button onclick="setLanguage('sk')">🇸🇰 Slovenčina</button>
+          <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+          <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
+          <button onclick="setLanguage('fi')">🇫🇮 Suomi</button>
+          <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
+          <button onclick="setLanguage('no')">🇳🇴 Norsk</button>
+          <button onclick="setLanguage('es')">🇪🇸 Español</button>
+          <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <div class="filters">
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Vyhľadávanie"
-      oninput="filterAmmo()"
-      data-translate="search"
-    />
-    <select id="countryFilter" onchange="filterAmmo()">
-      <option value="all" data-translate="filterByCountry">Filtrovať podľa krajiny</option>
+    <input type="text" id="searchInput" placeholder="Search" oninput="filterAmmo()" data-translate="search" />
+    <select id="caliberFilter" onchange="filterAmmo()">
+      <option value="all" data-translate="filterByCaliber">Filter by Caliber</option>
     </select>
   </div>
 
   <div id="ammoList" class="card-grid"></div>
 
-  <footer>
-    <a href="index.html" data-translate="firearms">Zbrane</a> |
-    <a href="manufacturers.html" data-translate="manufacturers">Výrobcovia</a>
-  </footer>
 </body>
 </html>
