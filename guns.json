@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Tikka T1x",
+    "caliber": ".22LR",
+    "type": "Bolt Action",
+    "origin": "Finland"
+  },
+  {
+    "name": "Glock 17",
+    "caliber": "9x19mm",
+    "type": "Pistol",
+    "origin": "Austria"
+  }
+]
