@@ -43,5 +43,38 @@
         console.error('Chyba pri načítaní súboru:', error);
       });
   </script>
+    <h2>Databáza streliva</h2>
+  <table id="ammoTable">
+    <thead>
+      <tr>
+        <th>Názov</th>
+        <th>Typ</th>
+        <th>Krajina</th>
+        <th>Rok zavedenia</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch('ammo.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.querySelector('#ammoTable tbody');
+        data.forEach(ammo => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${ammo.name}</td>
+            <td>${ammo.type}</td>
+            <td>${ammo.country}</td>
+            <td>${ammo.introduced}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error('Chyba pri načítaní súboru so strelivom:', error);
+      });
+  </script>
 </body>
 </html>
