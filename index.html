@@ -3,182 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Databáza zbraní</title>
+  <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1e1e1e;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .filter-bar {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 1rem;
-      background-color: #1a1a1a;
-    }
-
-    .filter-bar input,
-    .filter-bar select {
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 0.5rem;
-      background-color: #2b2b2b;
-      color: white;
-      border: none;
-      width: 100%;
-    }
-
-    @media (min-width: 600px) {
-      .filter-bar {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .filter-bar input, .filter-bar select {
-        max-width: 300px;
-      }
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .card {
-      background-color: #1f1f1f;
-      border-radius: 1rem;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100px;
-      max-height: 100px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
-
-    .card h2 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      margin: 0.2rem 0;
-      font-size: 0.9rem;
-    }
-
-    .card a {
-      margin-top: 0.5rem;
-      padding: 0.4rem 1rem;
-      background-color: #4fa3ff;
-      color: white;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .card a:hover {
-      background-color: #3c8bd6;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Databáza zbraní</h1>
+    <h1 id="title">Databáza zbraní</h1>
+    <div style="margin-top: 0.5rem;">
+      <button onclick="setLang('sk')">🇸🇰</button>
+      <button onclick="setLang('en')">🇬🇧</button>
+      <button onclick="setLang('de')">🇩🇪</button>
+      <button onclick="setLang('pl')">🇵🇱</button>
+    </div>
   </header>
 
   <div class="filter-bar">
-    <input type="text" id="searchInput" placeholder="🔎 Hľadať názov alebo kaliber">
+    <input type="text" id="searchInput" placeholder="🔎 Hľadať názov alebo kaliber" />
     <select id="countryFilter">
-      <option value="vsetky">Všetky krajiny</option>
+      <option value="all">Všetky krajiny</option>
     </select>
   </div>
 
-  <div class="container" id="gunsContainer"></div>
+  <main id="gunsContainer" class="cards-container"></main>
+
+  <script src="guns.js"></script>
 
   <script>
-    let allGuns = [];
-
-    function renderGuns(data, country = "vsetky", search = "") {
-      const container = document.getElementById("gunsContainer");
-      container.innerHTML = "";
-
-      const filtered = data.filter(gun => {
-        const matchesCountry = country === "vsetky" || gun.country === country;
-        const matchesSearch = search === "" || 
-          gun.name.toLowerCase().includes(search) || 
-          gun.caliber.toLowerCase().includes(search);
-        return matchesCountry && matchesSearch;
-      });
-
-      if (filtered.length === 0) {
-        container.innerHTML = "<p style='text-align:center;'>Žiadne výsledky</p>";
-        return;
+    const translations = {
+      sk: {
+        title: "Databáza zbraní",
+        searchPlaceholder: "🔎 Hľadať názov alebo kaliber",
+        allCountries: "Všetky krajiny",
+        manufacturer: "Výrobca",
+        caliber: "Kaliber",
+        category: "Kategória",
+        country: "Krajina",
+        viewMore: "Zobraziť viac",
+        noResults: "Žiadne výsledky"
+      },
+      en: {
+        title: "Firearms Database",
+        searchPlaceholder: "🔎 Search name or caliber",
+        allCountries: "All countries",
+        manufacturer: "Manufacturer",
+        caliber: "Caliber",
+        category: "Category",
+        country: "Country",
+        viewMore: "View More",
+        noResults: "No results"
+      },
+      de: {
+        title: "Waffendatenbank",
+        searchPlaceholder: "🔎 Name oder Kaliber suchen",
+        allCountries: "Alle Länder",
+        manufacturer: "Hersteller",
+        caliber: "Kaliber",
+        category: "Kategorie",
+        country: "Land",
+        viewMore: "Mehr anzeigen",
+        noResults: "Keine Ergebnisse"
+      },
+      pl: {
+        title: "Baza broni palnej",
+        searchPlaceholder: "🔎 Szukaj nazwy lub kalibru",
+        allCountries: "Wszystkie kraje",
+        manufacturer: "Producent",
+        caliber: "Kaliber",
+        category: "Kategoria",
+        country: "Kraj",
+        viewMore: "Pokaż więcej",
+        noResults: "Brak wyników"
       }
+    };
 
-      filtered.forEach(gun => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <img src="${gun.image}" alt="${gun.name}">
-          <h2>${gun.name}</h2>
-          <p><strong>Výrobca:</strong> ${gun.manufacturer}</p>
-          <p><strong>Kaliber:</strong> ${gun.caliber}</p>
-          <p><strong>Kategória:</strong> ${gun.category}</p>
-          <p><strong>Krajina:</strong> ${gun.country}</p>
-          <a href="detail.html?name=${encodeURIComponent(gun.name)}">Zobraziť viac</a>
-        `;
-        container.appendChild(card);
-      });
+    let currentLang = 'sk';
+
+    function setLang(lang) {
+      currentLang = lang;
+      const t = translations[lang];
+      document.getElementById('title').textContent = t.title;
+      document.getElementById('searchInput').placeholder = t.searchPlaceholder;
+
+      const countryFilter = document.getElementById('countryFilter');
+      const selectedValue = countryFilter.value;
+      countryFilter.innerHTML = `<option value="all">${t.allCountries}</option>`;
+      populateCountryFilter(); // refill unique countries
+      countryFilter.value = selectedValue;
+      renderGuns(); // re-render with translated labels
     }
-
-    fetch("guns.json")
-      .then(res => res.json())
-      .then(data => {
-        allGuns = data;
-        renderGuns(data);
-
-        const countries = [...new Set(data.map(g => g.country))].sort();
-        const filter = document.getElementById("countryFilter");
-        countries.forEach(country => {
-          const option = document.createElement("option");
-          option.value = country;
-          option.textContent = country;
-          filter.appendChild(option);
-        });
-
-        const searchInput = document.getElementById("searchInput");
-        filter.addEventListener("change", () => {
-          renderGuns(allGuns, filter.value, searchInput.value.toLowerCase());
-        });
-
-        searchInput.addEventListener("input", () => {
-          renderGuns(allGuns, filter.value, searchInput.value.toLowerCase());
-        });
-      });
   </script>
 </body>
 </html>
