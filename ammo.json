@@ -1,20 +1,37 @@
 [
   {
-    "name": "9x19mm Parabellum",
-    "type": "Pistol",
-    "origin": "Germany",
-    "year": "1902",
-    "usedIn": ["Glock 17", "MP5", "Beretta 92"],
-    "description_sk": "Jeden z najrozšírenejších pištoľových kalibrov na svete.",
-    "image": "images/9x19.jpg"
+    "name": "9×19mm Parabellum",
+    "type": "Handgun",
+    "diameter": "9.01 mm",
+    "length": "19.15 mm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/9mmLuger.JPG/220px-9mmLuger.JPG"
   },
   {
-    "name": "5.56x45mm NATO",
+    "name": ".45 ACP",
+    "type": "Handgun",
+    "diameter": "11.5 mm",
+    "length": "22.8 mm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/.45_ACP_Cartridge.jpg/220px-.45_ACP_Cartridge.jpg"
+  },
+  {
+    "name": "5.56×45mm NATO",
     "type": "Rifle",
-    "origin": "USA",
-    "year": "1963",
-    "usedIn": ["M16", "FN SCAR", "HK416"],
-    "description_sk": "Štandardná pušková munícia krajín NATO.",
-    "image": "images/556x45.jpg"
+    "diameter": "5.70 mm",
+    "length": "57.40 mm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/5.56x45mm_NATO_M855A1.jpg/220px-5.56x45mm_NATO_M855A1.jpg"
+  },
+  {
+    "name": "7.62×39mm",
+    "type": "Rifle",
+    "diameter": "7.92 mm",
+    "length": "56 mm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/7.62x39mm_round.jpg/220px-7.62x39mm_round.jpg"
+  },
+  {
+    "name": "12 Gauge",
+    "type": "Shotgun",
+    "diameter": "18.5 mm",
+    "length": "70 mm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/12_gauge_shotgun_shells.jpg/220px-12_gauge_shotgun_shells.jpg"
   }
 ]
