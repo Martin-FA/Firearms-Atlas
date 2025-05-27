@@ -43,6 +43,28 @@ const translations = {
     firearms: "Broń palna",
     manufacturers: "Producenci"
   },
+  es: {
+    search: "Buscar",
+    filterByCountry: "Filtrar por país",
+    caliber: "Calibre",
+    manufacturer: "Fabricante",
+    showMore: "Mostrar más",
+    back: "Atrás",
+    ammo: "Munición",
+    firearms: "Armas de fuego",
+    manufacturers: "Fabricantes"
+  },
+  fr: {
+    search: "Recherche",
+    filterByCountry: "Filtrer par pays",
+    caliber: "Calibre",
+    manufacturer: "Fabricant",
+    showMore: "Afficher plus",
+    back: "Retour",
+    ammo: "Munitions",
+    firearms: "Armes à feu",
+    manufacturers: "Fabricants"
+  },
   fi: {
     search: "Haku",
     filterByCountry: "Suodata maan mukaan",
@@ -51,7 +73,7 @@ const translations = {
     showMore: "Näytä lisää",
     back: "Takaisin",
     ammo: "Ammukset",
-    firearms: "Aseet",
+    firearms: "Ampuma-aseet",
     manufacturers: "Valmistajat"
   },
   sv: {
@@ -75,28 +97,6 @@ const translations = {
     ammo: "Ammunisjon",
     firearms: "Skytevåpen",
     manufacturers: "Produsenter"
-  },
-  es: {
-    search: "Buscar",
-    filterByCountry: "Filtrar por país",
-    caliber: "Calibre",
-    manufacturer: "Fabricante",
-    showMore: "Mostrar más",
-    back: "Atrás",
-    ammo: "Munición",
-    firearms: "Armas de fuego",
-    manufacturers: "Fabricantes"
-  },
-  fr: {
-    search: "Recherche",
-    filterByCountry: "Filtrer par pays",
-    caliber: "Calibre",
-    manufacturer: "Fabricant",
-    showMore: "Voir plus",
-    back: "Retour",
-    ammo: "Munitions",
-    firearms: "Armes à feu",
-    manufacturers: "Fabricants"
   }
 };
 
@@ -120,7 +120,6 @@ function translatePage() {
   });
 }
 
-// Modal ovládanie
 function openLanguageModal() {
   document.getElementById('languageModal').classList.remove('hidden');
 }
@@ -129,8 +128,6 @@ function closeLanguageModal() {
   document.getElementById('languageModal').classList.add('hidden');
 }
 
-// Spustenie prekladu pri načítaní
 document.addEventListener('DOMContentLoaded', () => {
   translatePage();
 });
-
