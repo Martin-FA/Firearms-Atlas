@@ -1,121 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="style.css">
+<html lang="sk">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Firearms Atlas</h1>
-  <p>This is the beginning of your offline firearm and caliber database app.</p>
+  <h1>Firearms Atlas</h1>
+  <p>Offline databáza zbraní a streliva.</p>
+
   <h2>Databáza zbraní</h2>
-<table id="gunsTable" border="1" style="width:100%; color:white;">
-  <thead>
-    <tr>
-      <th>Názov</th>
-      <th>Kaliber</th>
-      <th>Typ</th>
-      <th>Pôvod</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+  <table id="gunsTable">
+    <thead>
+      <tr>
+        <th>Názov</th>
+        <th>Kaliber</th>
+        <th>Typ</th>
+        <th>Pôvod</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
-<script>
-  fetch('guns.json')
-    .then(response => response.json())
-    .then(data => {
-      const tbody = document.querySelector('#gunsTable tbody');
-      data.forEach(gun => {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-          <td>${gun.name}</td>
-          <td>${gun.caliber}</td>
-          <td>${gun.type}</td>
-          <td>${gun.origin}</td>
-        `;
-        tbody.appendChild(row);
+  <script>
+    fetch('guns.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.querySelector('#gunsTable tbody');
+        data.forEach(gun => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${gun.name}</td>
+            <td>${gun.caliber}</td>
+            <td>${gun.type}</td>
+            <td>${gun.origin}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error('Chyba pri načítaní súboru:', error);
       });
-    })
-    .catch(error => {
-      console.error('Chyba pri načítaní súboru:', error);
-    });
-</script>
-  <h2>Zoznam zbraní</h2>
-<div id="gun-list"></div>
-
-<script>
-  fetch('guns.json')
-    .then(response => response.json())
-    .then(data => {
-      const gunList = document.getElementById('gun-list');
-      data.forEach(gun => {
-        const gunDiv = document.createElement('div');
-        gunDiv.innerHTML = `
-          <strong>${gun.name}</strong><br>
-          Výrobca: ${gun.manufacturer}<br>
-          Kaliber: ${gun.caliber}<br>
-          Typ: ${gun.type}<br>
-          Krajina: ${gun.country}<br><br>
-        `;
-        gunList.appendChild(gunDiv);
-      });
-    })
-    .catch(error => {
-      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
-      console.error('Chyba pri načítaní:', error);
-    });
-</script>
-  <h2>Zoznam zbraní</h2>
-<div id="gun-list"></div>
-
-<script>
-  fetch('guns.json')
-    .then(response => response.json())
-    .then(data => {
-      const gunList = document.getElementById('gun-list');
-      data.forEach(gun => {
-        const gunDiv = document.createElement('div');
-        gunDiv.innerHTML = `
-          <strong>${gun.name}</strong><br>
-          Výrobca: ${gun.manufacturer}<br>
-          Kaliber: ${gun.caliber}<br>
-          Typ: ${gun.type}<br>
-          Krajina: ${gun.country}<br><br>
-        `;
-        gunList.appendChild(gunDiv);
-      });
-    })
-    .catch(error => {
-      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
-      console.error('Chyba pri načítaní:', error);
-    });
-</script>
-  <h2>Zoznam zbraní</h2>
-<div id="gun-list"></div>
-
-<script>
-  fetch('guns.json')
-    .then(response => response.json())
-    .then(data => {
-      const gunList = document.getElementById('gun-list');
-      data.forEach(gun => {
-        const gunDiv = document.createElement('div');
-        gunDiv.innerHTML = `
-          <strong>${gun.name}</strong><br>
-          Výrobca: ${gun.manufacturer}<br>
-          Kaliber: ${gun.caliber}<br>
-          Typ: ${gun.type}<br>
-          Krajina: ${gun.country}<br><br>
-        `;
-        gunList.appendChild(gunDiv);
-      });
-    })
-    .catch(error => {
-      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
-      console.error('Chyba pri načítaní:', error);
-    });
-</script>
+  </script>
 </body>
 </html>
