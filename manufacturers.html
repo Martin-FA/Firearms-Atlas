@@ -1,92 +1,49 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firearms Atlas – Výrobcovia</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Manufacturers – Firearms Atlas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="manufacturers.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Firearms Atlas – Výrobcovia</h1>
-    <nav>
-      <a href="index.html">Zbrane</a>
-      <a href="ammo.html">Strelivo</a>
-      <a href="manufacturers.html">Výrobcovia</a>
-    </nav>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
+      <h1 class="title">Firearms Atlas</h1>
+    </div>
+    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
   </header>
 
   <main>
-    <section class="filters">
-      <input type="text" id="searchInput" placeholder="Hľadať výrobcu..." />
-      <select id="countryFilter">
-        <option value="">Všetky krajiny</option>
-        <option value="USA">USA</option>
-        <option value="Rakúsko">Rakúsko</option>
-        <option value="Rusko">Rusko</option>
-        <option value="Nemecko">Nemecko</option>
-        <option value="Belgicko">Belgicko</option>
+    <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
+    <div class="filters">
+      <select id="countryFilter" data-translate="filterByCountry">
+        <option value="all">All Countries</option>
       </select>
-    </section>
-
-    <section id="manufacturerContainer" class="card-grid"></section>
+    </div>
+    <div id="manufacturerList" class="card-grid"></div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Firearms Atlas</p>
-  </footer>
-
-  <script>
-    async function loadManufacturers() {
-      const response = await fetch('manufacturers.json');
-      const manufacturers = await response.json();
-      const container = document.getElementById('manufacturerContainer');
-      const searchInput = document.getElementById('searchInput');
-      const countryFilter = document.getElementById('countryFilter');
-
-      function renderManufacturers(data) {
-        container.innerHTML = '';
-        if (data.length === 0) {
-          container.innerHTML = '<p class="no-results">Nenašli sa žiadni výrobcovia.</p>';
-          return;
-        }
-
-        data.forEach(m => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <img src="${m.logo}" alt="${m.name}">
-            <h3>${m.name}</h3>
-            <p><strong>Krajina:</strong> ${m.country}</p>
-            <p><strong>Zameranie:</strong> ${m.specialization}</p>
-            <p><strong>Zbrane:</strong> ${m.products.join(', ')}</p>
-          `;
-          container.appendChild(card);
-        });
-      }
-
-      function applyFilters() {
-        const query = searchInput.value.toLowerCase();
-        const country = countryFilter.value;
-
-        const filtered = manufacturers.filter(m => {
-          return (
-            m.name.toLowerCase().includes(query) &&
-            (country === "" || m.country === country)
-          );
-        });
-
-        renderManufacturers(filtered);
-      }
-
-      searchInput.addEventListener('input', applyFilters);
-      countryFilter.addEventListener('change', applyFilters);
-
-      renderManufacturers(manufacturers);
-    }
-
-    loadManufacturers();
-  </script>
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Choose language</h2>
+      <ul class="flag-list">
+        <li onclick="setLanguage('en')">🇬🇧 English</li>
+        <li onclick="setLanguage('sk')">🇸🇰 Slovensky</li>
+        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
+        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
+        <li onclick="setLanguage('es')">🇪🇸 Español</li>
+        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
+        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
+        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
+        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
+      </ul>
+      <button onclick="closeLanguageModal()" data-translate="back">Back</button>
+    </div>
+  </div>
 </body>
 </html>
 
