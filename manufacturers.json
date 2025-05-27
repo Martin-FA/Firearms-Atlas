@@ -1,33 +1,43 @@
 [
   {
-    "name": "Glock Ges.m.b.H.",
-    "country": "Austria",
-    "specialty": "Pištole",
-    "weapons": ["Glock 17", "Glock 19"]
+    "name": "Colt's Manufacturing Company",
+    "country": "USA",
+    "founded": 1855,
+    "specialization": "Pištole, revolvery, útočné pušky",
+    "notableWeapons": ["Colt M1911", "Colt Python", "M4 Carbine"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Colt_logo.svg/800px-Colt_logo.svg.png"
   },
   {
     "name": "Heckler & Koch",
-    "country": "Germany",
-    "specialty": "Útočné pušky, pištole",
-    "weapons": ["HK416", "USP", "MP5"]
-  },
-  {
-    "name": "Kalashnikov Concern",
-    "country": "Russia",
-    "specialty": "Útočné pušky",
-    "weapons": ["AK-47", "AK-74", "AK-12"]
-  },
-  {
-    "name": "Colt's Manufacturing Company",
-    "country": "USA",
-    "specialty": "Revolvery, útočné pušky",
-    "weapons": ["Colt M1911", "Colt AR-15"]
+    "country": "Nemecko",
+    "founded": 1949,
+    "specialization": "Útočné pušky, pištole, SMG",
+    "notableWeapons": ["MP5", "G36", "HK416"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Heckler_%26_Koch_logo.svg/640px-Heckler_%26_Koch_logo.svg.png"
   },
   {
     "name": "FN Herstal",
-    "country": "Belgium",
-    "specialty": "Pušky, guľomety",
-    "weapons": ["FN SCAR", "FN FAL", "P90"]
+    "country": "Belgicko",
+    "founded": 1889,
+    "specialization": "Pušky, guľomety, pištole",
+    "notableWeapons": ["FN SCAR", "FN FAL", "P90"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/FN_Herstal_logo.svg/800px-FN_Herstal_logo.svg.png"
+  },
+  {
+    "name": "Česká zbrojovka Uherský Brod",
+    "country": "Česko",
+    "founded": 1936,
+    "specialization": "Pušky, pištole",
+    "notableWeapons": ["CZ 75", "CZ Scorpion EVO 3", "CZ BREN 2"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/CZ_Logo.svg/640px-CZ_Logo.svg.png"
+  },
+  {
+    "name": "Kalashnikov Concern",
+    "country": "Rusko",
+    "founded": 1807,
+    "specialization": "Útočné pušky, guľomety",
+    "notableWeapons": ["AK-47", "AK-74", "RPK"],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kalashnikov_Concern_logo.svg/640px-Kalashnikov_Concern_logo.svg.png"
   }
 ]
 
