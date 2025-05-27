@@ -47,11 +47,16 @@ const translations = {
 
 function setLanguage(lang) {
   localStorage.setItem('lang', lang);
-  location.reload();
+  translatePage();
+  closeLanguageModal();
+}
+
+function getLanguage() {
+  return localStorage.getItem('lang') || 'en'; // default is English
 }
 
 function translatePage() {
-  const lang = localStorage.getItem('lang') || 'sk';
+  const lang = getLanguage();
   document.querySelectorAll('[data-translate]').forEach(el => {
     const key = el.getAttribute('data-translate');
     if (translations[lang] && translations[lang][key]) {
@@ -59,3 +64,17 @@ function translatePage() {
     }
   });
 }
+
+// Modal ovládanie
+function openLanguageModal() {
+  document.getElementById('languageModal').classList.remove('hidden');
+}
+
+function closeLanguageModal() {
+  document.getElementById('languageModal').classList.add('hidden');
+}
+
+// Spustenie prekladu pri načítaní
+document.addEventListener('DOMContentLoaded', () => {
+  translatePage();
+});
