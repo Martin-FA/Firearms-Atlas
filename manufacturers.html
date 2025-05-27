@@ -1,183 +1,43 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Výrobcovia zbraní</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background-color: #121212;
-      color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1e1e1e;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .filter-bar {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 1rem;
-      background-color: #1a1a1a;
-    }
-
-    .filter-bar input,
-    .filter-bar select {
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 0.5rem;
-      background-color: #2b2b2b;
-      color: white;
-      border: none;
-      width: 100%;
-    }
-
-    @media (min-width: 600px) {
-      .filter-bar {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .filter-bar input, .filter-bar select {
-        max-width: 300px;
-      }
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 1rem;
-    }
-
-    .card {
-      background-color: #1f1f1f;
-      border-radius: 1rem;
-      padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .card img {
-      max-width: 100px;
-      max-height: 100px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
-
-    .card h2 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      margin: 0.2rem 0;
-      font-size: 0.9rem;
-    }
-
-    .card a {
-      margin-top: 0.5rem;
-      padding: 0.4rem 1rem;
-      background-color: #4fa3ff;
-      color: white;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-
-    .card a:hover {
-      background-color: #3c8bd6;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="manufacturers">Výrobcovia zbraní</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="lang.js"></script>
+  <script defer src="manufacturers.js"></script>
 </head>
-<body>
+<body onload="translatePage(); loadManufacturers();">
   <header>
-    <h1>Výrobcovia zbraní</h1>
+    <h1 data-translate="manufacturers">Výrobcovia zbraní</h1>
+    <div class="language-switcher">
+      <button onclick="setLanguage('sk')">🇸🇰</button>
+      <button onclick="setLanguage('en')">🇬🇧</button>
+      <button onclick="setLanguage('de')">🇩🇪</button>
+      <button onclick="setLanguage('pl')">🇵🇱</button>
+    </div>
   </header>
 
-  <div class="filter-bar">
-    <input type="text" id="searchInput" placeholder="🔎 Hľadať výrobcu alebo typ zbrane">
-    <select id="countryFilter">
-      <option value="vsetky">Všetky krajiny</option>
+  <div class="filters">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Vyhľadávanie"
+      oninput="filterManufacturers()"
+      data-translate="search"
+    />
+    <select id="countryFilter" onchange="filterManufacturers()">
+      <option value="all" data-translate="filterByCountry">Filtrovať podľa krajiny</option>
     </select>
   </div>
 
-  <div class="container" id="manufacturersContainer"></div>
+  <div id="manufacturerList" class="card-grid"></div>
 
-  <script>
-    let allManufacturers = [];
-
-    function renderManufacturers(data, country = "vsetky", search = "") {
-      const container = document.getElementById("manufacturersContainer");
-      container.innerHTML = "";
-
-      const filtered = data.filter(m => {
-        const matchesCountry = country === "vsetky" || m.country === country;
-        const matchesSearch = search === "" || 
-          m.name.toLowerCase().includes(search) ||
-          m.weaponTypes.some(type => type.toLowerCase().includes(search));
-        return matchesCountry && matchesSearch;
-      });
-
-      if (filtered.length === 0) {
-        container.innerHTML = "<p style='text-align:center;'>Žiadne výsledky</p>";
-        return;
-      }
-
-      filtered.forEach(manufacturer => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <img src="${manufacturer.logo}" alt="${manufacturer.name}">
-          <h2>${manufacturer.name}</h2>
-          <p><strong>Krajina:</strong> ${manufacturer.country}</p>
-          <p><strong>Zameranie:</strong> ${manufacturer.weaponTypes.join(', ')}</p>
-          <a href="manufacturer-detail.html?name=${encodeURIComponent(manufacturer.name)}">Zobraziť viac</a>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    fetch("manufacturers.json")
-      .then(res => res.json())
-      .then(data => {
-        allManufacturers = data;
-        renderManufacturers(data);
-
-        // Vyplniť select krajín
-        const countries = [...new Set(data.map(m => m.country))].sort();
-        const filter = document.getElementById("countryFilter");
-        countries.forEach(country => {
-          const option = document.createElement("option");
-          option.value = country;
-          option.textContent = country;
-          filter.appendChild(option);
-        });
-
-        const searchInput = document.getElementById("searchInput");
-        filter.addEventListener("change", () => {
-          renderManufacturers(allManufacturers, filter.value, searchInput.value.toLowerCase());
-        });
-
-        searchInput.addEventListener("input", () => {
-          renderManufacturers(allManufacturers, filter.value, searchInput.value.toLowerCase());
-        });
-      });
-  </script>
+  <footer>
+    <a href="index.html" data-translate="firearms">Zbrane</a> |
+    <a href="ammo.html" data-translate="ammo">Strelivo</a>
+  </footer>
 </body>
 </html>
+
