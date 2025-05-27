@@ -1,66 +1,62 @@
 [
   {
-    "name": "Glock 17",
-    "manufacturer": "Glock",
-    "caliber": "9×19mm Parabellum",
-    "category": "Pistol",
-    "image": "images/glock17.jpg"
-  },
-  {
-    "name": "Colt M1911",
-    "manufacturer": "Colt",
-    "caliber": ".45 ACP",
-    "category": "Pistol",
-    "image": "images/colt1911.jpg"
-  },
-  {
-    "name": "Heckler & Koch MP5",
-    "manufacturer": "Heckler & Koch",
-    "caliber": "9×19mm Parabellum",
-    "category": "Submachine Gun",
-    "image": "images/hkmp5.jpg"
-  },
-  {
-    "name": "AK-47",
-    "manufacturer": "Kalashnikov Concern",
+    "id": 1,
+    "name": {
+      "en": "AK-47",
+      "sk": "AK-47",
+      "de": "AK-47",
+      "pl": "AK-47",
+      "es": "AK-47",
+      "fi": "AK-47",
+      "no": "AK-47",
+      "fr": "AK-47",
+      "sv": "AK-47"
+    },
+    "manufacturer": "Izhmash",
+    "country": "Russia",
     "caliber": "7.62×39mm",
     "category": "Assault Rifle",
+    "description": {
+      "en": "A legendary assault rifle developed in the Soviet Union, known for its durability and reliability.",
+      "sk": "Legendárna útočná puška vyvinutá v Sovietskom zväze, známa svojou odolnosťou a spoľahlivosťou.",
+      "de": "Ein legendäres Sturmgewehr, das in der Sowjetunion entwickelt wurde, bekannt für seine Haltbarkeit und Zuverlässigkeit.",
+      "pl": "Legendarna broń szturmowa opracowana w ZSRR, znana z trwałości i niezawodności.",
+      "es": "Un rifle de asalto legendario desarrollado en la Unión Soviética, conocido por su durabilidad y fiabilidad.",
+      "fi": "Neuvostoliitossa kehitetty legendaarinen rynnäkkökivääri, tunnettu kestävyydestään ja luotettavuudestaan.",
+      "no": "Et legendarisk angrepsgevær utviklet i Sovjetunionen, kjent for sin holdbarhet og pålitelighet.",
+      "fr": "Un fusil d'assaut légendaire développé en Union soviétique, réputé pour sa durabilité et sa fiabilité.",
+      "sv": "Ett legendariskt automatgevär utvecklat i Sovjetunionen, känt för sin hållbarhet och pålitlighet."
+    },
     "image": "images/ak47.jpg"
   },
   {
-    "name": "FN SCAR-L",
-    "manufacturer": "FN Herstal",
-    "caliber": "5.56×45mm NATO",
-    "category": "Assault Rifle",
-    "image": "images/fnscar.jpg"
-  },
-  {
-    "name": "Barrett M82",
-    "manufacturer": "Barrett Firearms",
-    "caliber": ".50 BMG",
-    "category": "Sniper Rifle",
-    "image": "images/barrettm82.jpg"
-  },
-  {
-    "name": "Remington 870",
-    "manufacturer": "Remington Arms",
-    "caliber": "12 gauge",
-    "category": "Shotgun",
-    "image": "images/remington870.jpg"
-  },
-  {
-    "name": "SIG Sauer P320",
-    "manufacturer": "SIG Sauer",
+    "id": 2,
+    "name": {
+      "en": "Glock 17",
+      "sk": "Glock 17",
+      "de": "Glock 17",
+      "pl": "Glock 17",
+      "es": "Glock 17",
+      "fi": "Glock 17",
+      "no": "Glock 17",
+      "fr": "Glock 17",
+      "sv": "Glock 17"
+    },
+    "manufacturer": "Glock Ges.m.b.H.",
+    "country": "Austria",
     "caliber": "9×19mm Parabellum",
     "category": "Pistol",
-    "image": "images/sigp320.jpg"
-  },
-  {
-    "name": "Steyr AUG",
-    "manufacturer": "Steyr Mannlicher",
-    "caliber": "5.56×45mm NATO",
-    "category": "Bullpup Rifle",
-    "image": "images/steyraug.jpg"
+    "description": {
+      "en": "A widely used semi-automatic pistol known for its simplicity and reliability.",
+      "sk": "Rozšírená poloautomatická pištoľ známa svojou jednoduchosťou a spoľahlivosťou.",
+      "de": "Eine weit verbreitete halbautomatische Pistole, bekannt für ihre Einfachheit und Zuverlässigkeit.",
+      "pl": "Szeroko stosowany pistolet półautomatyczny, znany ze swojej prostoty i niezawodności.",
+      "es": "Una pistola semiautomática ampliamente utilizada, conocida por su simplicidad y fiabilidad.",
+      "fi": "Laajalti käytetty puoliautomaattinen pistooli, tunnettu yksinkertaisuudestaan ja luotettavuudestaan.",
+      "no": "En mye brukt halvautomatisk pistol kjent for sin enkelhet og pålitelighet.",
+      "fr": "Un pistolet semi-automatique largement utilisé, connu pour sa simplicité et sa fiabilité.",
+      "sv": "En mycket använd halvautomatisk pistol känd för sin enkelhet och tillförlitlighet."
+    },
+    "image": "images/glock17.jpg"
   }
 ]
-
