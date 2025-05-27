@@ -10,6 +10,7 @@
   <h1>Firearms Atlas</h1>
   <p>Offline databáza zbraní a streliva.</p>
 
+  <!-- Databáza zbraní -->
   <h2>Databáza zbraní</h2>
   <table id="gunsTable">
     <thead>
@@ -23,27 +24,8 @@
     <tbody></tbody>
   </table>
 
-  <script>
-    fetch('guns.json')
-      .then(response => response.json())
-      .then(data => {
-        const tbody = document.querySelector('#gunsTable tbody');
-        data.forEach(gun => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${gun.name}</td>
-            <td>${gun.caliber}</td>
-            <td>${gun.type}</td>
-            <td>${gun.origin}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      })
-      .catch(error => {
-        console.error('Chyba pri načítaní súboru:', error);
-      });
-  </script>
-    <h2>Databáza streliva</h2>
+  <!-- Databáza streliva -->
+  <h2>Databáza streliva</h2>
   <table id="ammoTable">
     <thead>
       <tr>
@@ -57,6 +39,27 @@
   </table>
 
   <script>
+    // Načítanie zbraní
+    fetch('guns.json')
+      .then(response => response.json())
+      .then(data => {
+        const tbody = document.querySelector('#gunsTable tbody');
+        data.forEach(gun => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td data-label="Názov">${gun.name}</td>
+            <td data-label="Kaliber">${gun.caliber}</td>
+            <td data-label="Typ">${gun.type}</td>
+            <td data-label="Pôvod">${gun.origin}</td>
+          `;
+          tbody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        console.error('Chyba pri načítaní súboru so zbraňami:', error);
+      });
+
+    // Načítanie streliva
     fetch('ammo.json')
       .then(response => response.json())
       .then(data => {
@@ -64,10 +67,10 @@
         data.forEach(ammo => {
           const row = document.createElement('tr');
           row.innerHTML = `
-            <td>${ammo.name}</td>
-            <td>${ammo.type}</td>
-            <td>${ammo.country}</td>
-            <td>${ammo.introduced}</td>
+            <td data-label="Názov">${ammo.name}</td>
+            <td data-label="Typ">${ammo.type}</td>
+            <td data-label="Krajina">${ammo.country}</td>
+            <td data-label="Rok zavedenia">${ammo.introduced}</td>
           `;
           tbody.appendChild(row);
         });
