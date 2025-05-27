@@ -1,37 +1,57 @@
 [
   {
-    "name": "FN Herstal",
-    "country": "Belgicko",
-    "weaponTypes": ["Pistole", "Útočné pušky"],
-    "logo": "images/fnherstal.png",
-    "description": "FN Herstal je belgický výrobca ručných zbraní s dlhou históriou. Ich produkty sú známe spoľahlivosťou a využívané sú v mnohých armádach po celom svete."
+    "name": "Glock",
+    "country": "Austria",
+    "founded": 1963,
+    "specialty": "Pistols",
+    "image": "images/glock.png",
+    "description": {
+      "en": "Glock is an Austrian firearms manufacturer known for its polymer-framed pistols.",
+      "sk": "Glock je rakúsky výrobca strelných zbraní známy svojimi pištoľami s polymérovým rámom."
+    }
   },
   {
     "name": "Heckler & Koch",
-    "country": "Nemecko",
-    "weaponTypes": ["Pistole", "Útočné pušky", "Samopaly"],
-    "logo": "images/hk.png",
-    "description": "Heckler & Koch je popredný nemecký výrobca známy zbraňami ako MP5, G36 alebo USP. Firma dodáva zbrane ozbrojeným silám aj polícii."
+    "country": "Germany",
+    "founded": 1949,
+    "specialty": "Rifles, Submachine guns, Pistols",
+    "image": "images/heckler_koch.png",
+    "description": {
+      "en": "German company renowned for the MP5 and G36 rifles.",
+      "sk": "Nemecká spoločnosť známa puškami MP5 a G36."
+    }
   },
   {
-    "name": "Colt's Manufacturing Company",
+    "name": "FN Herstal",
+    "country": "Belgium",
+    "founded": 1889,
+    "specialty": "Military and law enforcement firearms",
+    "image": "images/fn_herstal.png",
+    "description": {
+      "en": "Belgian manufacturer of firearms like the FN SCAR and Five-seveN.",
+      "sk": "Belgický výrobca zbraní ako FN SCAR a Five-seveN."
+    }
+  },
+  {
+    "name": "Colt",
     "country": "USA",
-    "weaponTypes": ["Revolvery", "Pistole", "Pušky"],
-    "logo": "images/colt.png",
-    "description": "Colt je legendárna americká spoločnosť, známa historickými revolvermi a ikonickým M1911. Hrá významnú rolu v histórii zbrojárskeho priemyslu."
+    "founded": 1855,
+    "specialty": "Revolvers, Pistols, Rifles",
+    "image": "images/colt.png",
+    "description": {
+      "en": "Historic American manufacturer famous for revolvers and the M4 carbine.",
+      "sk": "Historický americký výrobca známy revolvermi a karabínou M4."
+    }
   },
   {
-    "name": "Izhmash (Kalashnikov Concern)",
-    "country": "Rusko",
-    "weaponTypes": ["Útočné pušky", "Pušky", "Samopaly"],
-    "logo": "images/kalashnikov.png",
-    "description": "Kalashnikov Concern je najväčší ruský výrobca zbraní, známy najmä puškou AK-47. Výrobca má bohatú tradíciu a rozsiahly výskum v oblasti ručných zbraní."
-  },
-  {
-    "name": "Česká zbrojovka Uherský Brod (CZUB)",
-    "country": "Česká republika",
-    "weaponTypes": ["Pistole", "Pušky"],
-    "logo": "images/czub.png",
-    "description": "CZUB je popredný český výrobca známy pištoľami CZ 75 a modernými puškami pre ozbrojené zložky a civilný trh."
+    "name": "IWI",
+    "country": "Israel",
+    "founded": 1933,
+    "specialty": "Assault rifles, Submachine guns",
+    "image": "images/iwi.png",
+    "description": {
+      "en": "Israel Weapon Industries is known for the Tavor and Uzi.",
+      "sk": "Israel Weapon Industries je známy výrobou Tavoru a Uzi."
+    }
   }
 ]
