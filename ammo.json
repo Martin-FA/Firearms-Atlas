@@ -2,13 +2,19 @@
   {
     "name": "9x19mm Parabellum",
     "type": "Pistol",
-    "country": "Germany",
-    "introduced": "1902"
+    "origin": "Germany",
+    "year": "1902",
+    "usedIn": ["Glock 17", "MP5", "Beretta 92"],
+    "description_sk": "Jeden z najrozšírenejších pištoľových kalibrov na svete.",
+    "image": "images/9x19.jpg"
   },
   {
     "name": "5.56x45mm NATO",
     "type": "Rifle",
-    "country": "USA",
-    "introduced": "1963"
+    "origin": "USA",
+    "year": "1963",
+    "usedIn": ["M16", "FN SCAR", "HK416"],
+    "description_sk": "Štandardná pušková munícia krajín NATO.",
+    "image": "images/556x45.jpg"
   }
 ]
