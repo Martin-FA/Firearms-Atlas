@@ -1,83 +1,71 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const lang = getLanguage();
-  const container = document.getElementById("gunsContainer");
-  const searchInput = document.getElementById("searchInput");
-  const manufacturerFilter = document.getElementById("manufacturerFilter");
-  const caliberFilter = document.getElementById("caliberFilter");
+let gunsData = [];
 
-  let gunsData = [];
+async function fetchGuns() {
+  try {
+    const response = await fetch('guns.json');
+    gunsData = await response.json();
+    displayGuns(gunsData);
+  } catch (error) {
+    console.error("Chyba pri načítaní guns.json:", error);
+  }
+}
 
-  fetch("guns.json")
-    .then((response) => response.json())
-    .then((data) => {
-      gunsData = data;
-      populateFilters(data);
-      displayGuns(data);
-    });
+function displayGuns(data) {
+  const container = document.getElementById('gunsContainer');
+  container.innerHTML = '';
 
-  function displayGuns(guns) {
-    container.innerHTML = "";
-
-    if (guns.length === 0) {
-      container.innerHTML = `<p style="padding: 1rem;">No results found.</p>`;
-      return;
-    }
-
-    guns.forEach((gun) => {
-      const card = document.createElement("div");
-      card.className = "card";
-
-      card.innerHTML = `
-        <img src="${gun.image}" alt="${gun.name[lang]}" />
-        <h3>${gun.name[lang]}</h3>
-        <p><strong>${translations[lang].manufacturer}:</strong> ${gun.manufacturer}</p>
-        <p><strong>${translations[lang].caliber}:</strong> ${gun.caliber}</p>
-        <button onclick="location.href='detail.html?id=${gun.id}'">${translations[lang].showMore}</button>
-      `;
-
-      container.appendChild(card);
-    });
+  if (data.length === 0) {
+    container.innerHTML = '<p>No results found.</p>';
+    return;
   }
 
-  function populateFilters(guns) {
-    const manufacturers = [...new Set(guns.map((g) => g.manufacturer))];
-    const calibers = [...new Set(guns.map((g) => g.caliber))];
+  data.forEach(gun => {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-    manufacturerFilter.innerHTML = `<option value="">-- ${translations[lang].manufacturer} --</option>`;
-    caliberFilter.innerHTML = `<option value="">-- ${translations[lang].caliber} --</option>`;
+    card.innerHTML = `
+      <img src="${gun.image}" alt="${gun.name}">
+      <h3>${gun.name}</h3>
+      <p><strong data-translate="manufacturer">Manufacturer</strong>: ${gun.manufacturer}</p>
+      <p><strong data-translate="caliber">Caliber</strong>: ${gun.caliber}</p>
+      <p><strong data-translate="category">Category</strong>: ${gun.category}</p>
+      <button onclick="showGunDetails('${gun.name}')"><span data-translate="showMore">Show more</span></button>
+    `;
 
-    manufacturers.sort().forEach((man) => {
-      const option = document.createElement("option");
-      option.value = man;
-      option.textContent = man;
-      manufacturerFilter.appendChild(option);
-    });
+    container.appendChild(card);
+  });
 
-    calibers.sort().forEach((cal) => {
-      const option = document.createElement("option");
-      option.value = cal;
-      option.textContent = cal;
-      caliberFilter.appendChild(option);
-    });
-  }
+  translatePage(); // aplikuj preklad po načítaní
+}
 
-  function filterAndSearch() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const selectedManufacturer = manufacturerFilter.value;
-    const selectedCaliber = caliberFilter.value;
+function showGunDetails(name) {
+  alert(`Details for: ${name}`);
+}
 
-    const filtered = gunsData.filter((gun) => {
-      const matchesSearch = gun.name[lang].toLowerCase().includes(searchTerm);
-      const matchesManufacturer = selectedManufacturer === "" || gun.manufacturer === selectedManufacturer;
-      const matchesCaliber = selectedCaliber === "" || gun.caliber === selectedCaliber;
+function searchGuns() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const caliber = document.getElementById('caliberFilter').value.toLowerCase();
+  const manufacturer = document.getElementById('manufacturerFilter').value.toLowerCase();
 
-      return matchesSearch && matchesManufacturer && matchesCaliber;
-    });
+  const filtered = gunsData.filter(gun => {
+    const matchQuery =
+      gun.name.toLowerCase().includes(query) ||
+      gun.caliber.toLowerCase().includes(query) ||
+      gun.manufacturer.toLowerCase().includes(query);
 
-    displayGuns(filtered);
-  }
+    const matchCaliber = caliber ? gun.caliber.toLowerCase().includes(caliber) : true;
+    const matchManufacturer = manufacturer ? gun.manufacturer.toLowerCase().includes(manufacturer) : true;
 
-  searchInput.addEventListener("input", filterAndSearch);
-  manufacturerFilter.addEventListener("change", filterAndSearch);
-  caliberFilter.addEventListener("change", filterAndSearch);
+    return matchQuery && matchCaliber && matchManufacturer;
+  });
+
+  displayGuns(filtered);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchGuns();
+
+  document.getElementById('searchInput').addEventListener('input', searchGuns);
+  document.getElementById('caliberFilter').addEventListener('input', searchGuns);
+  document.getElementById('manufacturerFilter').addEventListener('input', searchGuns);
 });
