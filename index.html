@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Firearms Atlas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #1f1f1f;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #ff5722;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .weapon-card {
+      background-color: #1e1e1e;
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      overflow: hidden;
+      margin: 16px auto;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    .weapon-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .weapon-info {
+      padding: 16px;
+    }
+
+    .weapon-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .weapon-manufacturer,
+    .weapon-caliber,
+    .weapon-category {
+      font-size: 14px;
+      margin: 4px 0;
+    }
+
+    .view-more-button {
+      margin-top: 12px;
+      padding: 12px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .view-more-button:hover {
+      background-color: #e64a19;
+    }
+
+    @media (min-width: 600px) {
+      .weapon-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Firearms Atlas</h1>
-  <p>Offline databáza zbraní a streliva.</p>
+  <header>
+    <h1>Firearms Atlas</h1>
+  </header>
 
-  <!-- Databáza zbraní -->
-  <h2>Databáza zbraní</h2>
-  <table id="gunsTable">
-    <thead>
-      <tr>
-        <th>Názov</th>
-        <th>Kaliber</th>
-        <th>Typ</th>
-        <th>Pôvod</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <main>
+    <div class="weapon-grid">
+      <!-- Príklad jednej zbrane -->
+      <div class="weapon-card">
+        <img src="images/glock17.jpg" alt="Glock 17" class="weapon-image" />
+        <div class="weapon-info">
+          <h2 class="weapon-name">Glock 17</h2>
+          <p class="weapon-manufacturer">Glock GmbH</p>
+          <p class="weapon-caliber">Kaliber: 9×19mm</p>
+          <p class="weapon-category">Pistole</p>
+          <button class="view-more-button">Zobraziť viac</button>
+        </div>
+      </div>
 
-  <!-- Databáza streliva -->
-  <h2>Databáza streliva</h2>
-  <table id="ammoTable">
-    <thead>
-      <tr>
-        <th>Názov</th>
-        <th>Typ</th>
-        <th>Krajina</th>
-        <th>Rok zavedenia</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <script>
-    // Načítanie zbraní
-    fetch('guns.json')
-      .then(response => response.json())
-      .then(data => {
-        const tbody = document.querySelector('#gunsTable tbody');
-        data.forEach(gun => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td data-label="Názov">${gun.name}</td>
-            <td data-label="Kaliber">${gun.caliber}</td>
-            <td data-label="Typ">${gun.type}</td>
-            <td data-label="Pôvod">${gun.origin}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      })
-      .catch(error => {
-        console.error('Chyba pri načítaní súboru so zbraňami:', error);
-      });
-
-    // Načítanie streliva
-    fetch('ammo.json')
-      .then(response => response.json())
-      .then(data => {
-        const tbody = document.querySelector('#ammoTable tbody');
-        data.forEach(ammo => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td data-label="Názov">${ammo.name}</td>
-            <td data-label="Typ">${ammo.type}</td>
-            <td data-label="Krajina">${ammo.country}</td>
-            <td data-label="Rok zavedenia">${ammo.introduced}</td>
-          `;
-          tbody.appendChild(row);
-        });
-      })
-      .catch(error => {
-        console.error('Chyba pri načítaní súboru so strelivom:', error);
-      });
-  </script>
+      <!-- Ďalšie karty môžeš pridať rovnakou štruktúrou -->
+    </div>
+  </main>
 </body>
 </html>
