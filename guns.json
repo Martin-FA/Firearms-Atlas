@@ -1,57 +1,66 @@
 [
   {
-    "id": 1,
-    "name": {
-      "en": "AK-47",
-      "sk": "AK-47",
-      "de": "AK-47",
-      "pl": "AK-47",
-      "es": "AK-47",
-      "fr": "AK-47",
-      "fi": "AK-47",
-      "sv": "AK-47",
-      "no": "AK-47"
-    },
-    "manufacturer": "Izhmash",
+    "name": "Glock 17",
+    "manufacturer": "Glock",
+    "caliber": "9×19mm Parabellum",
+    "category": "Pistol",
+    "image": "images/glock17.jpg"
+  },
+  {
+    "name": "Colt M1911",
+    "manufacturer": "Colt",
+    "caliber": ".45 ACP",
+    "category": "Pistol",
+    "image": "images/colt1911.jpg"
+  },
+  {
+    "name": "Heckler & Koch MP5",
+    "manufacturer": "Heckler & Koch",
+    "caliber": "9×19mm Parabellum",
+    "category": "Submachine Gun",
+    "image": "images/hkmp5.jpg"
+  },
+  {
+    "name": "AK-47",
+    "manufacturer": "Kalashnikov Concern",
     "caliber": "7.62×39mm",
     "category": "Assault Rifle",
     "image": "images/ak47.jpg"
   },
   {
-    "id": 2,
-    "name": {
-      "en": "M4A1",
-      "sk": "M4A1",
-      "de": "M4A1",
-      "pl": "M4A1",
-      "es": "M4A1",
-      "fr": "M4A1",
-      "fi": "M4A1",
-      "sv": "M4A1",
-      "no": "M4A1"
-    },
-    "manufacturer": "Colt",
+    "name": "FN SCAR-L",
+    "manufacturer": "FN Herstal",
     "caliber": "5.56×45mm NATO",
-    "category": "Carbine",
-    "image": "images/m4a1.jpg"
+    "category": "Assault Rifle",
+    "image": "images/fnscar.jpg"
   },
   {
-    "id": 3,
-    "name": {
-      "en": "Glock 17",
-      "sk": "Glock 17",
-      "de": "Glock 17",
-      "pl": "Glock 17",
-      "es": "Glock 17",
-      "fr": "Glock 17",
-      "fi": "Glock 17",
-      "sv": "Glock 17",
-      "no": "Glock 17"
-    },
-    "manufacturer": "Glock Ges.m.b.H.",
+    "name": "Barrett M82",
+    "manufacturer": "Barrett Firearms",
+    "caliber": ".50 BMG",
+    "category": "Sniper Rifle",
+    "image": "images/barrettm82.jpg"
+  },
+  {
+    "name": "Remington 870",
+    "manufacturer": "Remington Arms",
+    "caliber": "12 gauge",
+    "category": "Shotgun",
+    "image": "images/remington870.jpg"
+  },
+  {
+    "name": "SIG Sauer P320",
+    "manufacturer": "SIG Sauer",
     "caliber": "9×19mm Parabellum",
     "category": "Pistol",
-    "image": "images/glock17.jpg"
+    "image": "images/sigp320.jpg"
+  },
+  {
+    "name": "Steyr AUG",
+    "manufacturer": "Steyr Mannlicher",
+    "caliber": "5.56×45mm NATO",
+    "category": "Bullpup Rifle",
+    "image": "images/steyraug.jpg"
   }
 ]
 
