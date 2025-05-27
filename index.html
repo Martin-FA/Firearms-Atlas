@@ -1,96 +1,45 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firearms Atlas</title>
+  <title data-translate="firearms">Firearms</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="guns.js"></script>
 </head>
-<body>
-  <header>
-    <h1 id="title">Databáza zbraní</h1>
-    <div style="margin-top: 0.5rem;">
-      <button onclick="setLang('sk')">🇸🇰</button>
-      <button onclick="setLang('en')">🇬🇧</button>
-      <button onclick="setLang('de')">🇩🇪</button>
-      <button onclick="setLang('pl')">🇵🇱</button>
-    </div>
+<body onload="translatePage(); loadGuns();">
+
+  <header class="app-header">
+    <h1 data-translate="appName">Firearms Atlas</h1>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="index.html" data-translate="firearms">Firearms</a></li>
+        <li><a href="manufacturers.html" data-translate="manufacturers">Manufacturers</a></li>
+        <li><a href="ammo.html" data-translate="ammo">Ammunition</a></li>
+      </ul>
+      <div class="language-dropdown">
+        <button class="lang-btn">🌐 English ▼</button>
+        <div class="language-options">
+          <button onclick="setLanguage('en')">🇬🇧 English</button>
+          <button onclick="setLanguage('sk')">🇸🇰 Slovenčina</button>
+          <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+          <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
+          <button onclick="setLanguage('fi')">🇫🇮 Suomi</button>
+          <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
+          <button onclick="setLanguage('no')">🇳🇴 Norsk</button>
+          <button onclick="setLanguage('es')">🇪🇸 Español</button>
+          <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div class="filter-bar">
-    <input type="text" id="searchInput" placeholder="🔎 Hľadať názov alebo kaliber" />
-    <select id="countryFilter">
-      <option value="all">Všetky krajiny</option>
-    </select>
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search" oninput="filterGuns()" data-translate="search" />
   </div>
 
-  <main id="gunsContainer" class="cards-container"></main>
+  <div id="gunList" class="card-grid"></div>
 
-  <script src="guns.js"></script>
-
-  <script>
-    const translations = {
-      sk: {
-        title: "Databáza zbraní",
-        searchPlaceholder: "🔎 Hľadať názov alebo kaliber",
-        allCountries: "Všetky krajiny",
-        manufacturer: "Výrobca",
-        caliber: "Kaliber",
-        category: "Kategória",
-        country: "Krajina",
-        viewMore: "Zobraziť viac",
-        noResults: "Žiadne výsledky"
-      },
-      en: {
-        title: "Firearms Database",
-        searchPlaceholder: "🔎 Search name or caliber",
-        allCountries: "All countries",
-        manufacturer: "Manufacturer",
-        caliber: "Caliber",
-        category: "Category",
-        country: "Country",
-        viewMore: "View More",
-        noResults: "No results"
-      },
-      de: {
-        title: "Waffendatenbank",
-        searchPlaceholder: "🔎 Name oder Kaliber suchen",
-        allCountries: "Alle Länder",
-        manufacturer: "Hersteller",
-        caliber: "Kaliber",
-        category: "Kategorie",
-        country: "Land",
-        viewMore: "Mehr anzeigen",
-        noResults: "Keine Ergebnisse"
-      },
-      pl: {
-        title: "Baza broni palnej",
-        searchPlaceholder: "🔎 Szukaj nazwy lub kalibru",
-        allCountries: "Wszystkie kraje",
-        manufacturer: "Producent",
-        caliber: "Kaliber",
-        category: "Kategoria",
-        country: "Kraj",
-        viewMore: "Pokaż więcej",
-        noResults: "Brak wyników"
-      }
-    };
-
-    let currentLang = 'sk';
-
-    function setLang(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-      document.getElementById('title').textContent = t.title;
-      document.getElementById('searchInput').placeholder = t.searchPlaceholder;
-
-      const countryFilter = document.getElementById('countryFilter');
-      const selectedValue = countryFilter.value;
-      countryFilter.innerHTML = `<option value="all">${t.allCountries}</option>`;
-      populateCountryFilter(); // refill unique countries
-      countryFilter.value = selectedValue;
-      renderGuns(); // re-render with translated labels
-    }
-  </script>
 </body>
 </html>
