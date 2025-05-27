@@ -1,15 +1,51 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  margin: 0;
-  padding: 20px;
+.weapon-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  overflow: hidden;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
-  color: #00bcd4;
+.weapon-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-p {
-  font-size: 18px;
+.weapon-info {
+  padding: 16px;
+}
+
+.weapon-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.weapon-manufacturer,
+.weapon-caliber,
+.weapon-category {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.view-more-button {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+.view-more-button:hover {
+  background-color: #e64a19;
 }
