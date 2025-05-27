@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('data/ammo.json')
+  fetch('ammo.json')
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById('ammo-container');
