@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Výrobcovia zbraní</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Výrobcovia zbraní</h1>
+  </header>
+
+  <!-- 🔍 Filtre -->
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Hľadať podľa názvu..." />
+
+    <select id="countryFilter">
+      <option value="">Všetky krajiny</option>
+    </select>
+
+    <select id="typeFilter">
+      <option value="">Všetky typy zbraní</option>
+    </select>
+  </section>
+
+  <!-- 📦 Výpis výrobcov -->
+  <main id="manufacturerContainer" class="card-container">
+    <!-- Karty výrobcov sa sem načítajú -->
+  </main>
+
+  <script>
+    let manufacturerData = [];
+
+    async function loadManufacturers() {
+      const response = await fetch('manufacturers.json');
+      manufacturerData = await response.json();
+      populateFilters(manufacturerData);
+      displayManufacturers(manufacturerData);
+    }
+
+    function populateFilters(data) {
+      const countries = new Set();
+      const types = new Set();
+
+      data.forEach(m => {
+        countries.add(m.country);
+        m.weaponTypes.forEach(t => types.add(t));
+      });
+
+      fillSelect('countryFilter', countries);
+      fillSelect('typeFilter', types);
+    }
+
+    function fillSelect(id, values) {
+      const select = document.getElementById(id);
+      Array.from(values).sort().forEach(val => {
+        const option = document.createElement('option');
+        option.value = val;
+        option.textContent = val;
+        select.appendChild(option);
+      });
+    }
+
+    function displayManufacturers(data) {
+      const container = document.getElementById('manufacturerContainer');
+      container.innerHTML = '';
+
+      if (data.length === 0) {
+        container.innerHTML = '<p>Žiadny výrobca nevyhovuje filtrom.</p>';
+        return;
+      }
+
+      data.forEach(m => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${m.logo}" alt="${m.name}">
+          <h2>${m.name}</h2>
+          <p><strong>Krajina:</strong> ${m.country}</p>
+          <p><strong>Typy zbraní:</strong> ${m.weaponTypes.join(', ')}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function applyFilters() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const selectedCountry = document.getElementById('countryFilter').value;
+      const selectedType = document.getElementById('typeFilter').value;
+
+      const filtered = manufacturerData.filter(m => {
+        return (
+          m.name.toLowerCase().includes(searchTerm) &&
+          (selectedCountry === '' || m.country === selectedCountry) &&
+          (selectedType === '' || m.weaponTypes.includes(selectedType))
+        );
+      });
+
+      displayManufacturers(filtered);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadManufacturers();
+      document.getElementById('searchInput').addEventListener('input', applyFilters);
+      document.getElementById('countryFilter').addEventListener('change', applyFilters);
+      document.getElementById('typeFilter').addEventListener('change', applyFilters);
+    });
+  </script>
+</body>
+</html>
