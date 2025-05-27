@@ -2,35 +2,34 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Výrobcovia – Firearms Atlas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firearms Atlas – Výrobcovia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Výrobcovia zbraní</h1>
+    <h1>Firearms Atlas – Výrobcovia</h1>
     <nav>
       <a href="index.html">Zbrane</a>
       <a href="ammo.html">Strelivo</a>
-      <a href="manufacturers.html" class="active">Výrobcovia</a>
+      <a href="manufacturers.html">Výrobcovia</a>
     </nav>
   </header>
 
   <main>
-    <section class="filter-container">
+    <section class="filters">
       <input type="text" id="searchInput" placeholder="Hľadať výrobcu..." />
       <select id="countryFilter">
         <option value="">Všetky krajiny</option>
         <option value="USA">USA</option>
-        <option value="Germany">Nemecko</option>
-        <option value="Russia">Rusko</option>
-        <!-- pridaj ďalšie -->
+        <option value="Rakúsko">Rakúsko</option>
+        <option value="Rusko">Rusko</option>
+        <option value="Nemecko">Nemecko</option>
+        <option value="Belgicko">Belgicko</option>
       </select>
     </section>
 
-    <section id="manufacturersContainer" class="card-container">
-      <!-- Výrobcovia sa načítajú pomocou JS -->
-    </section>
+    <section id="manufacturerContainer" class="card-grid"></section>
   </main>
 
   <footer>
@@ -38,48 +37,56 @@
   </footer>
 
   <script>
-    let manufacturersData = [];
-
     async function loadManufacturers() {
       const response = await fetch('manufacturers.json');
-      manufacturersData = await response.json();
-      displayManufacturers(manufacturersData);
-    }
+      const manufacturers = await response.json();
+      const container = document.getElementById('manufacturerContainer');
+      const searchInput = document.getElementById('searchInput');
+      const countryFilter = document.getElementById('countryFilter');
 
-    function displayManufacturers(data) {
-      const container = document.getElementById('manufacturersContainer');
-      container.innerHTML = '';
+      function renderManufacturers(data) {
+        container.innerHTML = '';
+        if (data.length === 0) {
+          container.innerHTML = '<p class="no-results">Nenašli sa žiadni výrobcovia.</p>';
+          return;
+        }
 
-      data.forEach(manufacturer => {
-        const card = document.createElement('div');
-        card.className = 'weapon-card';
-        card.innerHTML = `
-          <h3>${manufacturer.name}</h3>
-          <p><strong>Krajina:</strong> ${manufacturer.country}</p>
-          <p><strong>Zameranie:</strong> ${manufacturer.specialty}</p>
-          <p><strong>Zbrane:</strong> ${manufacturer.weapons.join(', ')}</p>
-        `;
-        container.appendChild(card);
-      });
-    }
+        data.forEach(m => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${m.logo}" alt="${m.name}">
+            <h3>${m.name}</h3>
+            <p><strong>Krajina:</strong> ${m.country}</p>
+            <p><strong>Zameranie:</strong> ${m.specialization}</p>
+            <p><strong>Zbrane:</strong> ${m.products.join(', ')}</p>
+          `;
+          container.appendChild(card);
+        });
+      }
 
-    document.getElementById('searchInput').addEventListener('input', filterManufacturers);
-    document.getElementById('countryFilter').addEventListener('change', filterManufacturers);
+      function applyFilters() {
+        const query = searchInput.value.toLowerCase();
+        const country = countryFilter.value;
 
-    function filterManufacturers() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const country = document.getElementById('countryFilter').value;
+        const filtered = manufacturers.filter(m => {
+          return (
+            m.name.toLowerCase().includes(query) &&
+            (country === "" || m.country === country)
+          );
+        });
 
-      const filtered = manufacturersData.filter(m => {
-        const matchesSearch = m.name.toLowerCase().includes(search);
-        const matchesCountry = !country || m.country === country;
-        return matchesSearch && matchesCountry;
-      });
+        renderManufacturers(filtered);
+      }
 
-      displayManufacturers(filtered);
+      searchInput.addEventListener('input', applyFilters);
+      countryFilter.addEventListener('change', applyFilters);
+
+      renderManufacturers(manufacturers);
     }
 
     loadManufacturers();
   </script>
 </body>
 </html>
+
