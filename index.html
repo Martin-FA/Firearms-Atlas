@@ -9,42 +9,44 @@
   <script defer src="guns.js"></script>
 </head>
 <body>
-  <header class="app-header">
-    <img src="images/logo.png" alt="Firearms Atlas Logo" class="app-logo" />
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
+      <h1 class="title">Firearms Atlas</h1>
+    </div>
+    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
   </header>
 
-  <main class="container">
-    <h1 data-translate="firearms">Firearms</h1>
-
+  <main>
     <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
-
-    <div id="filterContainer">
-      <select id="manufacturerFilter">
-        <option value="" data-translate="manufacturer">Manufacturer</option>
+    <div class="filters">
+      <select id="caliberFilter" data-translate="caliber">
+        <option value="all">All Calibers</option>
       </select>
-      <select id="caliberFilter">
-        <option value="" data-translate="caliber">Caliber</option>
+      <select id="manufacturerFilter" data-translate="manufacturer">
+        <option value="all">All Manufacturers</option>
       </select>
     </div>
-
-    <div id="gunsContainer" class="card-grid"></div>
+    <div id="gunList" class="card-grid"></div>
   </main>
 
-  <footer>
-    <button onclick="openLanguageModal()">🌐</button>
-  </footer>
-
-  <div id="languageModal" class="language-modal hidden">
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-    <button onclick="setLanguage('sk')">🇸🇰 Slovenčina</button>
-    <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
-    <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
-    <button onclick="setLanguage('es')">🇪🇸 Español</button>
-    <button onclick="setLanguage('fi')">🇫🇮 Suomi</button>
-    <button onclick="setLanguage('no')">🇳🇴 Norsk</button>
-    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
-    <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
-    <button onclick="closeLanguageModal()">❌</button>
+  <!-- Modal na výber jazyka -->
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Choose language</h2>
+      <ul class="flag-list">
+        <li onclick="setLanguage('en')">🇬🇧 English</li>
+        <li onclick="setLanguage('sk')">🇸🇰 Slovensky</li>
+        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
+        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
+        <li onclick="setLanguage('es')">🇪🇸 Español</li>
+        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
+        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
+        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
+        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
+      </ul>
+      <button onclick="closeLanguageModal()" data-translate="back">Back</button>
+    </div>
   </div>
 </body>
 </html>
