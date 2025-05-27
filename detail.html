@@ -2,31 +2,67 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-translate="firearmDetails">Detail zbrane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail zbrane</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="lang.js"></script>
-  <script defer src="detail.js"></script>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      padding: 1.5rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0.3rem 0;
+    }
+
+    strong {
+      color: #90caf9;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
-<body onload="translatePage(); loadDetail();">
-  <header>
-    <h1 data-translate="firearmDetails">Detail zbrane</h1>
-    <div class="language-switcher">
-      <button onclick="setLanguage('sk')">🇸🇰</button>
-      <button onclick="setLanguage('en')">🇬🇧</button>
-      <button onclick="setLanguage('de')">🇩🇪</button>
-      <button onclick="setLanguage('pl')">🇵🇱</button>
-    </div>
-  </header>
+<body onload="loadDetail()">
+  <div id="detailContainer"></div>
 
-  <div id="detailContainer" class="card-detail">
-    <!-- Dynamicky sa naplní -->
-  </div>
-
-  <footer>
-    <a href="index.html" data-translate="firearms">Zbrane</a> |
-    <a href="ammo.html" data-translate="ammo">Strelivo</a> |
-    <a href="manufacturers.html" data-translate="manufacturers">Výrobcovia</a>
-  </footer>
+  <script src="detail.js"></script>
+  <script src="language.js"></script>
 </body>
 </html>
+
