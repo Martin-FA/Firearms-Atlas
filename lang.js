@@ -1,15 +1,4 @@
 const translations = {
-  sk: {
-    search: "Vyhľadávanie",
-    filterByCountry: "Filtrovať podľa krajiny",
-    caliber: "Kaliber",
-    manufacturer: "Výrobca",
-    showMore: "Zobraziť viac",
-    back: "Späť",
-    ammo: "Strelivo",
-    firearms: "Zbrane",
-    manufacturers: "Výrobcovia"
-  },
   en: {
     search: "Search",
     filterByCountry: "Filter by Country",
@@ -20,6 +9,17 @@ const translations = {
     ammo: "Ammo",
     firearms: "Firearms",
     manufacturers: "Manufacturers"
+  },
+  sk: {
+    search: "Vyhľadávanie",
+    filterByCountry: "Filtrovať podľa krajiny",
+    caliber: "Kaliber",
+    manufacturer: "Výrobca",
+    showMore: "Zobraziť viac",
+    back: "Späť",
+    ammo: "Strelivo",
+    firearms: "Zbrane",
+    manufacturers: "Výrobcovia"
   },
   de: {
     search: "Suche",
@@ -49,21 +49,10 @@ const translations = {
     caliber: "Calibre",
     manufacturer: "Fabricante",
     showMore: "Mostrar más",
-    back: "Atrás",
+    back: "Volver",
     ammo: "Munición",
     firearms: "Armas de fuego",
     manufacturers: "Fabricantes"
-  },
-  fr: {
-    search: "Recherche",
-    filterByCountry: "Filtrer par pays",
-    caliber: "Calibre",
-    manufacturer: "Fabricant",
-    showMore: "Afficher plus",
-    back: "Retour",
-    ammo: "Munitions",
-    firearms: "Armes à feu",
-    manufacturers: "Fabricants"
   },
   fi: {
     search: "Haku",
@@ -76,17 +65,6 @@ const translations = {
     firearms: "Ampuma-aseet",
     manufacturers: "Valmistajat"
   },
-  sv: {
-    search: "Sök",
-    filterByCountry: "Filtrera efter land",
-    caliber: "Kaliber",
-    manufacturer: "Tillverkare",
-    showMore: "Visa mer",
-    back: "Tillbaka",
-    ammo: "Ammunition",
-    firearms: "Skjutvapen",
-    manufacturers: "Tillverkare"
-  },
   no: {
     search: "Søk",
     filterByCountry: "Filtrer etter land",
@@ -97,6 +75,28 @@ const translations = {
     ammo: "Ammunisjon",
     firearms: "Skytevåpen",
     manufacturers: "Produsenter"
+  },
+  fr: {
+    search: "Recherche",
+    filterByCountry: "Filtrer par pays",
+    caliber: "Calibre",
+    manufacturer: "Fabricant",
+    showMore: "Voir plus",
+    back: "Retour",
+    ammo: "Munitions",
+    firearms: "Armes à feu",
+    manufacturers: "Fabricants"
+  },
+  sv: {
+    search: "Sök",
+    filterByCountry: "Filtrera efter land",
+    caliber: "Kaliber",
+    manufacturer: "Tillverkare",
+    showMore: "Visa mer",
+    back: "Tillbaka",
+    ammo: "Ammunition",
+    firearms: "Skjutvapen",
+    manufacturers: "Tillverkare"
   }
 };
 
@@ -107,7 +107,7 @@ function setLanguage(lang) {
 }
 
 function getLanguage() {
-  return localStorage.getItem('lang') || 'en'; // default is English
+  return localStorage.getItem('lang') || 'en';
 }
 
 function translatePage() {
