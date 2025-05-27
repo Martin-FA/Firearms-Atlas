@@ -6,16 +6,119 @@
   <title>Firearms Atlas – Strelivo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark-theme">
+<body>
   <header>
     <h1>Strelivo</h1>
-    <a href="index.html">← Späť na hlavné menu</a>
   </header>
 
-  <main>
-    <div id="ammo-container" class="card-container"></div>
+  <!-- 🔍 Vyhľadávanie a filtre -->
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Hľadať podľa názvu..." />
+    
+    <select id="typeFilter">
+      <option value="">Všetky typy</option>
+    </select>
+
+    <select id="caliberFilter">
+      <option value="">Všetky ráže</option>
+    </select>
+
+    <select id="countryFilter">
+      <option value="">Všetky krajiny</option>
+    </select>
+  </section>
+
+  <!-- 📦 Výpis streliva -->
+  <main id="ammoContainer" class="card-container">
+    <!-- Karty streliva sa sem načítajú -->
   </main>
 
-  <script src="ammo.js"></script>
+  <!-- ⚙️ Skript -->
+  <script>
+    let ammoData = [];
+
+    async function loadAmmo() {
+      const response = await fetch('ammo.json');
+      ammoData = await response.json();
+      populateFilters(ammoData);
+      displayAmmo(ammoData);
+    }
+
+    function populateFilters(data) {
+      const typeSet = new Set();
+      const caliberSet = new Set();
+      const countrySet = new Set();
+
+      data.forEach(ammo => {
+        typeSet.add(ammo.type);
+        caliberSet.add(ammo.caliber);
+        countrySet.add(ammo.country);
+      });
+
+      fillSelect('typeFilter', typeSet);
+      fillSelect('caliberFilter', caliberSet);
+      fillSelect('countryFilter', countrySet);
+    }
+
+    function fillSelect(selectId, values) {
+      const select = document.getElementById(selectId);
+      values = Array.from(values).sort();
+      values.forEach(val => {
+        const option = document.createElement('option');
+        option.value = val;
+        option.textContent = val;
+        select.appendChild(option);
+      });
+    }
+
+    function displayAmmo(data) {
+      const container = document.getElementById('ammoContainer');
+      container.innerHTML = '';
+
+      if (data.length === 0) {
+        container.innerHTML = '<p>Žiadne strelivo nevyhovuje filtrom.</p>';
+        return;
+      }
+
+      data.forEach(ammo => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${ammo.image}" alt="${ammo.name}">
+          <h2>${ammo.name}</h2>
+          <p><strong>Typ:</strong> ${ammo.type}</p>
+          <p><strong>Ráž:</strong> ${ammo.caliber}</p>
+          <p><strong>Krajina:</strong> ${ammo.country}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function applyFilters() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const selectedType = document.getElementById('typeFilter').value;
+      const selectedCaliber = document.getElementById('caliberFilter').value;
+      const selectedCountry = document.getElementById('countryFilter').value;
+
+      const filtered = ammoData.filter(ammo => {
+        return (
+          ammo.name.toLowerCase().includes(searchTerm) &&
+          (selectedType === '' || ammo.type === selectedType) &&
+          (selectedCaliber === '' || ammo.caliber === selectedCaliber) &&
+          (selectedCountry === '' || ammo.country === selectedCountry)
+        );
+      });
+
+      displayAmmo(filtered);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadAmmo();
+      document.getElementById('searchInput').addEventListener('input', applyFilters);
+      document.getElementById('typeFilter').addEventListener('change', applyFilters);
+      document.getElementById('caliberFilter').addEventListener('change', applyFilters);
+      document.getElementById('countryFilter').addEventListener('change', applyFilters);
+    });
+  </script>
 </body>
 </html>
