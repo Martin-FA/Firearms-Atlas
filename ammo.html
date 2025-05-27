@@ -3,122 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firearms Atlas – Strelivo</title>
+  <title>Strelivo</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      background-color: #1a1a1a;
+    }
+
+    .filter-bar input,
+    .filter-bar select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      background-color: #2b2b2b;
+      color: white;
+      border: none;
+      width: 100%;
+    }
+
+    @media (min-width: 600px) {
+      .filter-bar {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .filter-bar input, .filter-bar select {
+        max-width: 300px;
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .card a {
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background-color: #4fa3ff;
+      color: white;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover {
+      background-color: #3c8bd6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Strelivo</h1>
+    <h1>Databáza streliva</h1>
   </header>
 
-  <!-- 🔍 Vyhľadávanie a filtre -->
-  <section class="filters">
-    <input type="text" id="searchInput" placeholder="Hľadať podľa názvu..." />
-    
-    <select id="typeFilter">
-      <option value="">Všetky typy</option>
-    </select>
-
-    <select id="caliberFilter">
-      <option value="">Všetky ráže</option>
-    </select>
-
+  <div class="filter-bar">
+    <input type="text" id="searchInput" placeholder="🔎 Hľadať názov alebo kaliber">
     <select id="countryFilter">
-      <option value="">Všetky krajiny</option>
+      <option value="vsetky">Všetky krajiny</option>
     </select>
-  </section>
+  </div>
 
-  <!-- 📦 Výpis streliva -->
-  <main id="ammoContainer" class="card-container">
-    <!-- Karty streliva sa sem načítajú -->
-  </main>
+  <div class="container" id="ammoContainer"></div>
 
-  <!-- ⚙️ Skript -->
   <script>
-    let ammoData = [];
+    let allAmmo = [];
 
-    async function loadAmmo() {
-      const response = await fetch('ammo.json');
-      ammoData = await response.json();
-      populateFilters(ammoData);
-      displayAmmo(ammoData);
-    }
+    function renderAmmo(data, country = "vsetky", search = "") {
+      const container = document.getElementById("ammoContainer");
+      container.innerHTML = "";
 
-    function populateFilters(data) {
-      const typeSet = new Set();
-      const caliberSet = new Set();
-      const countrySet = new Set();
-
-      data.forEach(ammo => {
-        typeSet.add(ammo.type);
-        caliberSet.add(ammo.caliber);
-        countrySet.add(ammo.country);
+      const filtered = data.filter(ammo => {
+        const matchesCountry = country === "vsetky" || ammo.country === country;
+        const matchesSearch = search === "" || 
+          ammo.name.toLowerCase().includes(search) || 
+          ammo.caliber.toLowerCase().includes(search);
+        return matchesCountry && matchesSearch;
       });
 
-      fillSelect('typeFilter', typeSet);
-      fillSelect('caliberFilter', caliberSet);
-      fillSelect('countryFilter', countrySet);
-    }
-
-    function fillSelect(selectId, values) {
-      const select = document.getElementById(selectId);
-      values = Array.from(values).sort();
-      values.forEach(val => {
-        const option = document.createElement('option');
-        option.value = val;
-        option.textContent = val;
-        select.appendChild(option);
-      });
-    }
-
-    function displayAmmo(data) {
-      const container = document.getElementById('ammoContainer');
-      container.innerHTML = '';
-
-      if (data.length === 0) {
-        container.innerHTML = '<p>Žiadne strelivo nevyhovuje filtrom.</p>';
+      if (filtered.length === 0) {
+        container.innerHTML = "<p style='text-align:center;'>Žiadne výsledky</p>";
         return;
       }
 
-      data.forEach(ammo => {
-        const card = document.createElement('div');
-        card.className = 'card';
+      filtered.forEach(ammo => {
+        const card = document.createElement("div");
+        card.className = "card";
         card.innerHTML = `
           <img src="${ammo.image}" alt="${ammo.name}">
           <h2>${ammo.name}</h2>
-          <p><strong>Typ:</strong> ${ammo.type}</p>
-          <p><strong>Ráž:</strong> ${ammo.caliber}</p>
+          <p><strong>Kaliber:</strong> ${ammo.caliber}</p>
           <p><strong>Krajina:</strong> ${ammo.country}</p>
+          <p><strong>Typ:</strong> ${ammo.type}</p>
+          <a href="ammo-detail.html?name=${encodeURIComponent(ammo.name)}">Zobraziť viac</a>
         `;
         container.appendChild(card);
       });
     }
 
-    function applyFilters() {
-      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-      const selectedType = document.getElementById('typeFilter').value;
-      const selectedCaliber = document.getElementById('caliberFilter').value;
-      const selectedCountry = document.getElementById('countryFilter').value;
+    fetch("ammo.json")
+      .then(res => res.json())
+      .then(data => {
+        allAmmo = data;
+        renderAmmo(data);
 
-      const filtered = ammoData.filter(ammo => {
-        return (
-          ammo.name.toLowerCase().includes(searchTerm) &&
-          (selectedType === '' || ammo.type === selectedType) &&
-          (selectedCaliber === '' || ammo.caliber === selectedCaliber) &&
-          (selectedCountry === '' || ammo.country === selectedCountry)
-        );
+        const countries = [...new Set(data.map(a => a.country))].sort();
+        const filter = document.getElementById("countryFilter");
+        countries.forEach(country => {
+          const option = document.createElement("option");
+          option.value = country;
+          option.textContent = country;
+          filter.appendChild(option);
+        });
+
+        const searchInput = document.getElementById("searchInput");
+        filter.addEventListener("change", () => {
+          renderAmmo(allAmmo, filter.value, searchInput.value.toLowerCase());
+        });
+
+        searchInput.addEventListener("input", () => {
+          renderAmmo(allAmmo, filter.value, searchInput.value.toLowerCase());
+        });
       });
-
-      displayAmmo(filtered);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadAmmo();
-      document.getElementById('searchInput').addEventListener('input', applyFilters);
-      document.getElementById('typeFilter').addEventListener('change', applyFilters);
-      document.getElementById('caliberFilter').addEventListener('change', applyFilters);
-      document.getElementById('countryFilter').addEventListener('change', applyFilters);
-    });
   </script>
 </body>
 </html>
