@@ -2,6 +2,10 @@ function getLanguage() {
   return localStorage.getItem("language") || "sk";
 }
 
+function translateText(textObj, lang) {
+  return textObj?.[lang] || textObj?.["sk"] || "";
+}
+
 function loadDetail() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -22,23 +26,26 @@ function loadDetail() {
 
       const lang = getLanguage();
 
-      const translatedName = gun.name[lang] || gun.name["sk"];
-      const translatedManufacturer = gun.manufacturer[lang] || gun.manufacturer["sk"];
-      const translatedCategory = gun.category[lang] || gun.category["sk"];
-      const translatedCaliber = gun.caliber[lang] || gun.caliber["sk"];
-      const translatedDescription = gun.description?.[lang] || "";
+      const name = translateText(gun.name, lang);
+      const manufacturer = translateText(gun.manufacturer, lang);
+      const category = translateText(gun.category, lang);
+      const caliber = translateText(gun.caliber, lang);
+      const description = translateText(gun.description, lang);
 
       document.getElementById("detailContainer").innerHTML = `
         <div class="card">
-          <img src="${gun.image}" alt="${translatedName}" />
-          <h2>${translatedName}</h2>
-          <p><strong data-translate="manufacturer">Výrobca:</strong> ${translatedManufacturer}</p>
-          <p><strong data-translate="caliber">Kaliber:</strong> ${translatedCaliber}</p>
-          <p><strong data-translate="category">Kategória:</strong> ${translatedCategory}</p>
-          <p>${translatedDescription}</p>
+          <img src="${gun.image}" alt="${name}" />
+          <h2>${name}</h2>
+          <p><strong data-translate="manufacturer">Výrobca:</strong> ${manufacturer}</p>
+          <p><strong data-translate="caliber">Kaliber:</strong> ${caliber}</p>
+          <p><strong data-translate="category">Kategória:</strong> ${category}</p>
+          <p>${description}</p>
         </div>
       `;
-      translatePage(); // Preloží fixné texty v prípade zmeny jazyka
+
+      if (typeof translatePage === "function") {
+        translatePage();
+      }
     })
     .catch((error) => {
       document.getElementById("detailContainer").innerHTML = `<p>Chyba pri načítaní detailov.</p>`;
