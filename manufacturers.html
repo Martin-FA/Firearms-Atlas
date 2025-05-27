@@ -3,47 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manufacturers – Firearms Atlas</title>
+  <title>Firearms Atlas – Manufacturers</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="lang.js"></script>
   <script defer src="manufacturers.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
-      <h1 class="title">Firearms Atlas</h1>
-    </div>
-    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
+  <header>
+    <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
+    <h1 data-translate="manufacturers">Manufacturers</h1>
   </header>
 
-  <main>
-    <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
-    <div class="filters">
-      <select id="countryFilter" data-translate="filterByCountry">
-        <option value="all">All Countries</option>
-      </select>
-    </div>
-    <div id="manufacturerList" class="card-grid"></div>
-  </main>
+  <nav class="language-selector">
+    <button onclick="setLanguage('en')">🇬🇧</button>
+    <button onclick="setLanguage('sk')">🇸🇰</button>
+    <button onclick="setLanguage('de')">🇩🇪</button>
+    <button onclick="setLanguage('pl')">🇵🇱</button>
+    <button onclick="setLanguage('fi')">🇫🇮</button>
+    <button onclick="setLanguage('sv')">🇸🇪</button>
+    <button onclick="setLanguage('no')">🇳🇴</button>
+    <button onclick="setLanguage('fr')">🇫🇷</button>
+    <button onclick="setLanguage('es')">🇪🇸</button>
+  </nav>
 
-  <div id="languageModal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Choose language</h2>
-      <ul class="flag-list">
-        <li onclick="setLanguage('en')">🇬🇧 English</li>
-        <li onclick="setLanguage('sk')">🇸🇰 Slovensky</li>
-        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
-        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
-        <li onclick="setLanguage('es')">🇪🇸 Español</li>
-        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
-        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
-        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
-        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
-      </ul>
-      <button onclick="closeLanguageModal()" data-translate="back">Back</button>
-    </div>
-  </div>
+  <main>
+    <input type="text" id="searchInput" placeholder="Search..." data-translate="search"/>
+    <div id="manufacturerList" class="card-container"></div>
+  </main>
 </body>
 </html>
 
