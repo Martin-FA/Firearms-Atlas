@@ -1,105 +1,62 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firearms Atlas – Zbrane</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Firearms Atlas – Firearms</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark">
+
   <header>
-    <h1>Firearms Atlas – Zbrane</h1>
-    <nav>
-      <a href="index.html">Zbrane</a>
-      <a href="ammo.html">Strelivo</a>
-      <a href="manufacturers.html">Výrobcovia</a>
-    </nav>
+    <h1 data-translate="firearms">Firearms</h1>
+    <button onclick="openLanguageModal()">🌐</button>
   </header>
 
   <main>
-    <section class="filters">
-      <input type="text" id="searchInput" placeholder="Hľadať názov zbrane..." />
-      <select id="categoryFilter">
-        <option value="">Všetky kategórie</option>
-        <option value="Pištoľ">Pištoľ</option>
-        <option value="Útočná puška">Útočná puška</option>
-        <option value="Samopal">Samopal</option>
-        <option value="Brokovnica">Brokovnica</option>
-        <option value="Odstreľovacia puška">Odstreľovacia puška</option>
-      </select>
-      <select id="manufacturerFilter">
-        <option value="">Všetci výrobcovia</option>
-        <option value="Glock Ges.m.b.H.">Glock</option>
-        <option value="Colt's Manufacturing Company">Colt</option>
-        <option value="Kalashnikov Concern">Kalashnikov</option>
-        <option value="Heckler & Koch">Heckler & Koch</option>
-        <option value="FN Herstal">FN Herstal</option>
-        <option value="Remington Arms">Remington</option>
-        <option value="Barrett Firearms">Barrett</option>
-      </select>
-    </section>
+    <input type="text" id="searchInput" placeholder="Search..." data-translate="search"/>
+    
+    <select id="manufacturerFilter">
+      <option value="all" data-translate="manufacturer">Manufacturer</option>
+    </select>
 
-    <section id="gunsContainer" class="card-grid"></section>
+    <select id="caliberFilter">
+      <option value="all" data-translate="caliber">Caliber</option>
+    </select>
+
+    <div id="firearmsContainer" class="card-container"></div>
   </main>
 
+  <!-- Jazykový modal -->
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🌐 Choose Language</h2>
+      <ul class="flag-list">
+        <li onclick="setLanguage('en')">🇬🇧 English</li>
+        <li onclick="setLanguage('sk')">🇸🇰 Slovenčina</li>
+        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
+        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
+        <li onclick="setLanguage('es')">🇪🇸 Español</li>
+        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
+        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
+        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
+        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
+      </ul>
+      <button onclick="closeLanguageModal()">✖</button>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Firearms Atlas</p>
+    <nav>
+      <a href="index.html" data-translate="firearms">Firearms</a>
+      <a href="ammo.html" data-translate="ammo">Ammo</a>
+      <a href="manufacturers.html" data-translate="manufacturers">Manufacturers</a>
+    </nav>
   </footer>
 
-  <script>
-    async function loadGuns() {
-      const response = await fetch('guns.json');
-      const guns = await response.json();
-      const container = document.getElementById('gunsContainer');
-      const searchInput = document.getElementById('searchInput');
-      const categoryFilter = document.getElementById('categoryFilter');
-      const manufacturerFilter = document.getElementById('manufacturerFilter');
+  <script src="lang.js"></script>
+  <script src="guns.js"></script>
 
-      function renderGuns(data) {
-        container.innerHTML = '';
-        if (data.length === 0) {
-          container.innerHTML = '<p class="no-results">Nenašli sa žiadne zbrane.</p>';
-          return;
-        }
-
-        data.forEach(gun => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <img src="${gun.image}" alt="${gun.name}">
-            <h3>${gun.name}</h3>
-            <p><strong>Výrobca:</strong> ${gun.manufacturer}</p>
-            <p><strong>Kaliber:</strong> ${gun.caliber}</p>
-            <p><strong>Kategória:</strong> ${gun.category}</p>
-          `;
-          container.appendChild(card);
-        });
-      }
-
-      function applyFilters() {
-        const query = searchInput.value.toLowerCase();
-        const category = categoryFilter.value;
-        const manufacturer = manufacturerFilter.value;
-
-        const filtered = guns.filter(gun => {
-          return (
-            gun.name.toLowerCase().includes(query) &&
-            (category === "" || gun.category === category) &&
-            (manufacturer === "" || gun.manufacturer === manufacturer)
-          );
-        });
-
-        renderGuns(filtered);
-      }
-
-      searchInput.addEventListener('input', applyFilters);
-      categoryFilter.addEventListener('change', applyFilters);
-      manufacturerFilter.addEventListener('change', applyFilters);
-
-      renderGuns(guns);
-    }
-
-    loadGuns();
-  </script>
 </body>
 </html>
+
