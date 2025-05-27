@@ -1,0 +1,20 @@
+[
+  {
+    "name": "FN Herstal",
+    "country": "Belgicko",
+    "weaponTypes": ["Pištole", "Útočné pušky", "Guľomety"],
+    "logo": "images/fn-herstal.png"
+  },
+  {
+    "name": "Heckler & Koch",
+    "country": "Nemecko",
+    "weaponTypes": ["Pištole", "Útočné pušky", "Samopaly"],
+    "logo": "images/hk-logo.png"
+  },
+  {
+    "name": "Colt's Manufacturing Company",
+    "country": "USA",
+    "weaponTypes": ["Revolvery", "Pištole", "Karabíny"],
+    "logo": "images/colt.png"
+  }
+]
