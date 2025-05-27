@@ -5,107 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Výrobcovia zbraní</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+    }
+
+    .card a {
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background-color: #4fa3ff;
+      color: white;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover {
+      background-color: #3c8bd6;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Výrobcovia zbraní</h1>
   </header>
 
-  <!-- 🔍 Filtre -->
-  <section class="filters">
-    <input type="text" id="searchInput" placeholder="Hľadať podľa názvu..." />
-
-    <select id="countryFilter">
-      <option value="">Všetky krajiny</option>
-    </select>
-
-    <select id="typeFilter">
-      <option value="">Všetky typy zbraní</option>
-    </select>
-  </section>
-
-  <!-- 📦 Výpis výrobcov -->
-  <main id="manufacturerContainer" class="card-container">
-    <!-- Karty výrobcov sa sem načítajú -->
-  </main>
+  <div class="container" id="manufacturersContainer"></div>
 
   <script>
-    let manufacturerData = [];
-
-    async function loadManufacturers() {
-      const response = await fetch('manufacturers.json');
-      manufacturerData = await response.json();
-      populateFilters(manufacturerData);
-      displayManufacturers(manufacturerData);
-    }
-
-    function populateFilters(data) {
-      const countries = new Set();
-      const types = new Set();
-
-      data.forEach(m => {
-        countries.add(m.country);
-        m.weaponTypes.forEach(t => types.add(t));
+    fetch('manufacturers.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('manufacturersContainer');
+        data.forEach(manufacturer => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${manufacturer.logo}" alt="${manufacturer.name}">
+            <h2>${manufacturer.name}</h2>
+            <p><strong>Krajina:</strong> ${manufacturer.country}</p>
+            <p><strong>Zameranie:</strong> ${manufacturer.weaponTypes.join(', ')}</p>
+            <a href="manufacturer-detail.html?name=${encodeURIComponent(manufacturer.name)}">Zobraziť viac</a>
+          `;
+          container.appendChild(card);
+        });
       });
-
-      fillSelect('countryFilter', countries);
-      fillSelect('typeFilter', types);
-    }
-
-    function fillSelect(id, values) {
-      const select = document.getElementById(id);
-      Array.from(values).sort().forEach(val => {
-        const option = document.createElement('option');
-        option.value = val;
-        option.textContent = val;
-        select.appendChild(option);
-      });
-    }
-
-    function displayManufacturers(data) {
-      const container = document.getElementById('manufacturerContainer');
-      container.innerHTML = '';
-
-      if (data.length === 0) {
-        container.innerHTML = '<p>Žiadny výrobca nevyhovuje filtrom.</p>';
-        return;
-      }
-
-      data.forEach(m => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <img src="${m.logo}" alt="${m.name}">
-          <h2>${m.name}</h2>
-          <p><strong>Krajina:</strong> ${m.country}</p>
-          <p><strong>Typy zbraní:</strong> ${m.weaponTypes.join(', ')}</p>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    function applyFilters() {
-      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-      const selectedCountry = document.getElementById('countryFilter').value;
-      const selectedType = document.getElementById('typeFilter').value;
-
-      const filtered = manufacturerData.filter(m => {
-        return (
-          m.name.toLowerCase().includes(searchTerm) &&
-          (selectedCountry === '' || m.country === selectedCountry) &&
-          (selectedType === '' || m.weaponTypes.includes(selectedType))
-        );
-      });
-
-      displayManufacturers(filtered);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      loadManufacturers();
-      document.getElementById('searchInput').addEventListener('input', applyFilters);
-      document.getElementById('countryFilter').addEventListener('change', applyFilters);
-      document.getElementById('typeFilter').addEventListener('change', applyFilters);
-    });
   </script>
 </body>
 </html>
