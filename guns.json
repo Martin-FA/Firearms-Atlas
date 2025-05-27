@@ -1,23 +1,51 @@
 [
   {
-    "name": "AK-47",
-    "manufacturer": "Kalashnikov Concern",
-    "caliber": "7.62×39mm",
-    "type": "Assault rifle",
-    "country": "Russia"
-  },
-  {
-    "name": "M4A1",
-    "manufacturer": "Colt's Manufacturing Company",
-    "caliber": "5.56×45mm NATO",
-    "type": "Assault rifle",
-    "country": "USA"
-  },
-  {
     "name": "Glock 17",
     "manufacturer": "Glock Ges.m.b.H.",
     "caliber": "9×19mm Parabellum",
-    "type": "Pistol",
-    "country": "Austria"
+    "category": "Pištoľ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Glock_17_9mmPara.jpg/300px-Glock_17_9mmPara.jpg"
+  },
+  {
+    "name": "Colt M1911",
+    "manufacturer": "Colt's Manufacturing Company",
+    "caliber": ".45 ACP",
+    "category": "Pištoľ",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/M1911Colt.jpg/300px-M1911Colt.jpg"
+  },
+  {
+    "name": "AK-47",
+    "manufacturer": "Kalashnikov Concern",
+    "caliber": "7.62×39mm",
+    "category": "Útočná puška",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/AK-47_Type_II_Part_DM-ST-89-01131.jpg/300px-AK-47_Type_II_Part_DM-ST-89-01131.jpg"
+  },
+  {
+    "name": "Heckler & Koch MP5",
+    "manufacturer": "Heckler & Koch",
+    "caliber": "9×19mm Parabellum",
+    "category": "Samopal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/H%26K_MP5K_PDW_01.jpg/300px-H%26K_MP5K_PDW_01.jpg"
+  },
+  {
+    "name": "FN SCAR-L",
+    "manufacturer": "FN Herstal",
+    "caliber": "5.56×45mm NATO",
+    "category": "Útočná puška",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/FN_SCAR_L_STD_-_RIAT_2012_%287716903731%29.jpg/300px-FN_SCAR_L_STD_-_RIAT_2012_%287716903731%29.jpg"
+  },
+  {
+    "name": "Remington 870",
+    "manufacturer": "Remington Arms",
+    "caliber": "12 Gauge",
+    "category": "Brokovnica",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Remington_870_Police_Magnum.jpg/300px-Remington_870_Police_Magnum.jpg"
+  },
+  {
+    "name": "Barrett M82",
+    "manufacturer": "Barrett Firearms",
+    "caliber": ".50 BMG",
+    "category": "Odstreľovacia puška",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Barrett_M82A1_rifle.jpg/300px-Barrett_M82A1_rifle.jpg"
   }
 ]
