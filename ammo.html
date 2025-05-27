@@ -2,34 +2,33 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strelivo – Firearms Atlas</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firearms Atlas – Strelivo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Strelivo</h1>
+    <h1>Firearms Atlas – Strelivo</h1>
     <nav>
       <a href="index.html">Zbrane</a>
-      <a href="ammo.html" class="active">Strelivo</a>
+      <a href="ammo.html">Strelivo</a>
       <a href="manufacturers.html">Výrobcovia</a>
     </nav>
   </header>
 
   <main>
-    <section class="filter-container">
-      <input type="text" id="searchInput" placeholder="Hľadať podľa názvu..." />
+    <section class="filters">
+      <input type="text" id="searchInput" placeholder="Hľadať kaliber..." />
       <select id="typeFilter">
         <option value="">Všetky typy</option>
-        <option value="Handgun">Handgun</option>
-        <option value="Rifle">Rifle</option>
-        <option value="Shotgun">Shotgun</option>
+        <option value="Pištoľové">Pištoľové</option>
+        <option value="Puškové">Puškové</option>
+        <option value="Brokové">Brokové</option>
+        <option value="Historické">Historické</option>
       </select>
     </section>
 
-    <section id="ammoContainer" class="card-container">
-      <!-- Strelivo sa načíta pomocou JS -->
-    </section>
+    <section id="ammoContainer" class="card-grid"></section>
   </main>
 
   <footer>
@@ -37,47 +36,52 @@
   </footer>
 
   <script>
-    let ammoData = [];
-
     async function loadAmmo() {
       const response = await fetch('ammo.json');
-      ammoData = await response.json();
-      displayAmmo(ammoData);
-    }
-
-    function displayAmmo(data) {
+      const ammo = await response.json();
       const container = document.getElementById('ammoContainer');
-      container.innerHTML = '';
+      const searchInput = document.getElementById('searchInput');
+      const typeFilter = document.getElementById('typeFilter');
 
-      data.forEach(ammo => {
-        const card = document.createElement('div');
-        card.className = 'weapon-card';
-        card.innerHTML = `
-          <img src="${ammo.image}" alt="${ammo.name}" />
-          <h3>${ammo.name}</h3>
-          <p><strong>Typ:</strong> ${ammo.type}</p>
-          <p><strong>Priemer:</strong> ${ammo.diameter}</p>
-          <p><strong>Dĺžka:</strong> ${ammo.length}</p>
-          <button>Zobraziť viac</button>
-        `;
-        container.appendChild(card);
-      });
-    }
+      function renderAmmo(data) {
+        container.innerHTML = '';
+        if (data.length === 0) {
+          container.innerHTML = '<p class="no-results">Nenašlo sa žiadne strelivo.</p>';
+          return;
+        }
 
-    document.getElementById('searchInput').addEventListener('input', filterAmmo);
-    document.getElementById('typeFilter').addEventListener('change', filterAmmo);
+        data.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <h3>${item.name}</h3>
+            <p><strong>Typ:</strong> ${item.type}</p>
+            <p><strong>Priemer:</strong> ${item.diameter}</p>
+            <p><strong>Rok zavedenia:</strong> ${item.year}</p>
+          `;
+          container.appendChild(card);
+        });
+      }
 
-    function filterAmmo() {
-      const search = document.getElementById('searchInput').value.toLowerCase();
-      const type = document.getElementById('typeFilter').value;
+      function applyFilters() {
+        const query = searchInput.value.toLowerCase();
+        const type = typeFilter.value;
 
-      const filtered = ammoData.filter(ammo => {
-        const matchesSearch = ammo.name.toLowerCase().includes(search);
-        const matchesType = !type || ammo.type === type;
-        return matchesSearch && matchesType;
-      });
+        const filtered = ammo.filter(item => {
+          return (
+            item.name.toLowerCase().includes(query) &&
+            (type === "" || item.type === type)
+          );
+        });
 
-      displayAmmo(filtered);
+        renderAmmo(filtered);
+      }
+
+      searchInput.addEventListener('input', applyFilters);
+      typeFilter.addEventListener('change', applyFilters);
+
+      renderAmmo(ammo);
     }
 
     loadAmmo();
