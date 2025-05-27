@@ -1,91 +1,51 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Firearms Atlas – Strelivo</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ammo – Firearms Atlas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="ammo.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Firearms Atlas – Strelivo</h1>
-    <nav>
-      <a href="index.html">Zbrane</a>
-      <a href="ammo.html">Strelivo</a>
-      <a href="manufacturers.html">Výrobcovia</a>
-    </nav>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
+      <h1 class="title">Firearms Atlas</h1>
+    </div>
+    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
   </header>
 
   <main>
-    <section class="filters">
-      <input type="text" id="searchInput" placeholder="Hľadať kaliber..." />
-      <select id="typeFilter">
-        <option value="">Všetky typy</option>
-        <option value="Pištoľové">Pištoľové</option>
-        <option value="Puškové">Puškové</option>
-        <option value="Brokové">Brokové</option>
-        <option value="Historické">Historické</option>
+    <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
+    <div class="filters">
+      <select id="caliberFilter" data-translate="caliber">
+        <option value="all">All Calibers</option>
       </select>
-    </section>
-
-    <section id="ammoContainer" class="card-grid"></section>
+      <select id="manufacturerFilter" data-translate="manufacturer">
+        <option value="all">All Manufacturers</option>
+      </select>
+    </div>
+    <div id="ammoList" class="card-grid"></div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Firearms Atlas</p>
-  </footer>
-
-  <script>
-    async function loadAmmo() {
-      const response = await fetch('ammo.json');
-      const ammo = await response.json();
-      const container = document.getElementById('ammoContainer');
-      const searchInput = document.getElementById('searchInput');
-      const typeFilter = document.getElementById('typeFilter');
-
-      function renderAmmo(data) {
-        container.innerHTML = '';
-        if (data.length === 0) {
-          container.innerHTML = '<p class="no-results">Nenašlo sa žiadne strelivo.</p>';
-          return;
-        }
-
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <img src="${item.image}" alt="${item.name}">
-            <h3>${item.name}</h3>
-            <p><strong>Typ:</strong> ${item.type}</p>
-            <p><strong>Priemer:</strong> ${item.diameter}</p>
-            <p><strong>Rok zavedenia:</strong> ${item.year}</p>
-          `;
-          container.appendChild(card);
-        });
-      }
-
-      function applyFilters() {
-        const query = searchInput.value.toLowerCase();
-        const type = typeFilter.value;
-
-        const filtered = ammo.filter(item => {
-          return (
-            item.name.toLowerCase().includes(query) &&
-            (type === "" || item.type === type)
-          );
-        });
-
-        renderAmmo(filtered);
-      }
-
-      searchInput.addEventListener('input', applyFilters);
-      typeFilter.addEventListener('change', applyFilters);
-
-      renderAmmo(ammo);
-    }
-
-    loadAmmo();
-  </script>
+  <div id="languageModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Choose language</h2>
+      <ul class="flag-list">
+        <li onclick="setLanguage('en')">🇬🇧 English</li>
+        <li onclick="setLanguage('sk')">🇸🇰 Slovensky</li>
+        <li onclick="setLanguage('de')">🇩🇪 Deutsch</li>
+        <li onclick="setLanguage('pl')">🇵🇱 Polski</li>
+        <li onclick="setLanguage('es')">🇪🇸 Español</li>
+        <li onclick="setLanguage('fi')">🇫🇮 Suomi</li>
+        <li onclick="setLanguage('sv')">🇸🇪 Svenska</li>
+        <li onclick="setLanguage('no')">🇳🇴 Norsk</li>
+        <li onclick="setLanguage('fr')">🇫🇷 Français</li>
+      </ul>
+      <button onclick="closeLanguageModal()" data-translate="back">Back</button>
+    </div>
+  </div>
 </body>
 </html>
-
