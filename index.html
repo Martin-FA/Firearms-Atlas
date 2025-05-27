@@ -3,58 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Firearms Atlas - Firearms</title>
+  <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="lang.js"></script>
+  <script defer src="guns.js"></script>
 </head>
 <body>
-  <header class="header">
-    <h1>Firearms Atlas</h1>
-    <nav class="nav">
-      <a href="index.html" data-translate="firearms">Firearms</a>
-      <a href="ammo.html" data-translate="ammo">Ammo</a>
-      <a href="manufacturers.html" data-translate="manufacturers">Manufacturers</a>
-    </nav>
-    <button onclick="openLanguageModal()" class="lang-button">🌐</button>
+  <header class="app-header">
+    <img src="images/logo.png" alt="Firearms Atlas Logo" class="app-logo" />
   </header>
 
-  <main class="main">
-    <div class="filters">
-      <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
-      <select id="caliberFilter">
-        <option value="">All Calibers</option>
-      </select>
+  <main class="container">
+    <h1 data-translate="firearms">Firearms</h1>
+
+    <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
+
+    <div id="filterContainer">
       <select id="manufacturerFilter">
-        <option value="">All Manufacturers</option>
+        <option value="" data-translate="manufacturer">Manufacturer</option>
+      </select>
+      <select id="caliberFilter">
+        <option value="" data-translate="caliber">Caliber</option>
       </select>
     </div>
 
-    <div id="gunList" class="card-grid"></div>
+    <div id="gunsContainer" class="card-grid"></div>
   </main>
 
-  <!-- Jazykové okno -->
-  <div id="languageModal" class="modal hidden">
-    <div class="modal-content">
-      <h2>Select Language</h2>
-      <ul class="language-options">
-        <li><button onclick="setLanguage('en')">🇬🇧 English</button></li>
-        <li><button onclick="setLanguage('sk')">🇸🇰 Slovenčina</button></li>
-        <li><button onclick="setLanguage('de')">🇩🇪 Deutsch</button></li>
-        <li><button onclick="setLanguage('pl')">🇵🇱 Polski</button></li>
-        <li><button onclick="setLanguage('es')">🇪🇸 Español</button></li>
-        <li><button onclick="setLanguage('fi')">🇫🇮 Suomi</button></li>
-        <li><button onclick="setLanguage('no')">🇳🇴 Norsk</button></li>
-        <li><button onclick="setLanguage('fr')">🇫🇷 Français</button></li>
-        <li><button onclick="setLanguage('sv')">🇸🇪 Svenska</button></li>
-        <li><button onclick="closeLanguageModal()">❌</button></li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <p>&copy; 2025 Firearms Atlas</p>
+  <footer>
+    <button onclick="openLanguageModal()">🌐</button>
   </footer>
 
-  <script src="lang.js"></script>
-  <script src="guns.js"></script>
+  <div id="languageModal" class="language-modal hidden">
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('sk')">🇸🇰 Slovenčina</button>
+    <button onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+    <button onclick="setLanguage('pl')">🇵🇱 Polski</button>
+    <button onclick="setLanguage('es')">🇪🇸 Español</button>
+    <button onclick="setLanguage('fi')">🇫🇮 Suomi</button>
+    <button onclick="setLanguage('no')">🇳🇴 Norsk</button>
+    <button onclick="setLanguage('fr')">🇫🇷 Français</button>
+    <button onclick="setLanguage('sv')">🇸🇪 Svenska</button>
+    <button onclick="closeLanguageModal()">❌</button>
+  </div>
 </body>
 </html>
