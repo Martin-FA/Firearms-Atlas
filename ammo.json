@@ -1,0 +1,14 @@
+[
+  {
+    "name": "9x19mm Parabellum",
+    "type": "Pistol",
+    "country": "Germany",
+    "introduced": "1902"
+  },
+  {
+    "name": "5.56x45mm NATO",
+    "type": "Rifle",
+    "country": "USA",
+    "introduced": "1963"
+  }
+]
