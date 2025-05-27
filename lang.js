@@ -42,6 +42,61 @@ const translations = {
     ammo: "Amunicja",
     firearms: "Broń palna",
     manufacturers: "Producenci"
+  },
+  fi: {
+    search: "Haku",
+    filterByCountry: "Suodata maan mukaan",
+    caliber: "Kaliperi",
+    manufacturer: "Valmistaja",
+    showMore: "Näytä lisää",
+    back: "Takaisin",
+    ammo: "Ammukset",
+    firearms: "Aseet",
+    manufacturers: "Valmistajat"
+  },
+  sv: {
+    search: "Sök",
+    filterByCountry: "Filtrera efter land",
+    caliber: "Kaliber",
+    manufacturer: "Tillverkare",
+    showMore: "Visa mer",
+    back: "Tillbaka",
+    ammo: "Ammunition",
+    firearms: "Skjutvapen",
+    manufacturers: "Tillverkare"
+  },
+  no: {
+    search: "Søk",
+    filterByCountry: "Filtrer etter land",
+    caliber: "Kaliber",
+    manufacturer: "Produsent",
+    showMore: "Vis mer",
+    back: "Tilbake",
+    ammo: "Ammunisjon",
+    firearms: "Skytevåpen",
+    manufacturers: "Produsenter"
+  },
+  es: {
+    search: "Buscar",
+    filterByCountry: "Filtrar por país",
+    caliber: "Calibre",
+    manufacturer: "Fabricante",
+    showMore: "Mostrar más",
+    back: "Atrás",
+    ammo: "Munición",
+    firearms: "Armas de fuego",
+    manufacturers: "Fabricantes"
+  },
+  fr: {
+    search: "Recherche",
+    filterByCountry: "Filtrer par pays",
+    caliber: "Calibre",
+    manufacturer: "Fabricant",
+    showMore: "Voir plus",
+    back: "Retour",
+    ammo: "Munitions",
+    firearms: "Armes à feu",
+    manufacturers: "Fabricants"
   }
 };
 
@@ -78,3 +133,4 @@ function closeLanguageModal() {
 document.addEventListener('DOMContentLoaded', () => {
   translatePage();
 });
+
