@@ -9,5 +9,38 @@
 <body>
   <h1>Welcome to Firearms Atlas</h1>
   <p>This is the beginning of your offline firearm and caliber database app.</p>
+  <h2>Databáza zbraní</h2>
+<table id="gunsTable" border="1" style="width:100%; color:white;">
+  <thead>
+    <tr>
+      <th>Názov</th>
+      <th>Kaliber</th>
+      <th>Typ</th>
+      <th>Pôvod</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+  fetch('guns.json')
+    .then(response => response.json())
+    .then(data => {
+      const tbody = document.querySelector('#gunsTable tbody');
+      data.forEach(gun => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${gun.name}</td>
+          <td>${gun.caliber}</td>
+          <td>${gun.type}</td>
+          <td>${gun.origin}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    })
+    .catch(error => {
+      console.error('Chyba pri načítaní súboru:', error);
+    });
+</script>
 </body>
 </html>
