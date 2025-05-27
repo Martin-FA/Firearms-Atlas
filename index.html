@@ -42,5 +42,80 @@
       console.error('Chyba pri načítaní súboru:', error);
     });
 </script>
+  <h2>Zoznam zbraní</h2>
+<div id="gun-list"></div>
+
+<script>
+  fetch('guns.json')
+    .then(response => response.json())
+    .then(data => {
+      const gunList = document.getElementById('gun-list');
+      data.forEach(gun => {
+        const gunDiv = document.createElement('div');
+        gunDiv.innerHTML = `
+          <strong>${gun.name}</strong><br>
+          Výrobca: ${gun.manufacturer}<br>
+          Kaliber: ${gun.caliber}<br>
+          Typ: ${gun.type}<br>
+          Krajina: ${gun.country}<br><br>
+        `;
+        gunList.appendChild(gunDiv);
+      });
+    })
+    .catch(error => {
+      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
+      console.error('Chyba pri načítaní:', error);
+    });
+</script>
+  <h2>Zoznam zbraní</h2>
+<div id="gun-list"></div>
+
+<script>
+  fetch('guns.json')
+    .then(response => response.json())
+    .then(data => {
+      const gunList = document.getElementById('gun-list');
+      data.forEach(gun => {
+        const gunDiv = document.createElement('div');
+        gunDiv.innerHTML = `
+          <strong>${gun.name}</strong><br>
+          Výrobca: ${gun.manufacturer}<br>
+          Kaliber: ${gun.caliber}<br>
+          Typ: ${gun.type}<br>
+          Krajina: ${gun.country}<br><br>
+        `;
+        gunList.appendChild(gunDiv);
+      });
+    })
+    .catch(error => {
+      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
+      console.error('Chyba pri načítaní:', error);
+    });
+</script>
+  <h2>Zoznam zbraní</h2>
+<div id="gun-list"></div>
+
+<script>
+  fetch('guns.json')
+    .then(response => response.json())
+    .then(data => {
+      const gunList = document.getElementById('gun-list');
+      data.forEach(gun => {
+        const gunDiv = document.createElement('div');
+        gunDiv.innerHTML = `
+          <strong>${gun.name}</strong><br>
+          Výrobca: ${gun.manufacturer}<br>
+          Kaliber: ${gun.caliber}<br>
+          Typ: ${gun.type}<br>
+          Krajina: ${gun.country}<br><br>
+        `;
+        gunList.appendChild(gunDiv);
+      });
+    })
+    .catch(error => {
+      document.getElementById('gun-list').innerText = 'Nepodarilo sa načítať zoznam zbraní.';
+      console.error('Chyba pri načítaní:', error);
+    });
+</script>
 </body>
 </html>
