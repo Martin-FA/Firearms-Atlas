@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Výrobcovia zbraní</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       background-color: #121212;
       color: #f0f0f0;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
     }
 
     header {
@@ -23,6 +22,22 @@
     h1 {
       margin: 0;
       font-size: 2rem;
+    }
+
+    .filter-container {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #1a1a1a;
+    }
+
+    .filter-container select {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      background-color: #2b2b2b;
+      color: white;
+      border: none;
     }
 
     .container {
@@ -80,24 +95,56 @@
     <h1>Výrobcovia zbraní</h1>
   </header>
 
+  <div class="filter-container">
+    <select id="countryFilter">
+      <option value="vsetky">Všetky krajiny</option>
+    </select>
+  </div>
+
   <div class="container" id="manufacturersContainer"></div>
 
   <script>
-    fetch('manufacturers.json')
+    let allManufacturers = [];
+
+    function renderManufacturers(data, country = "vsetky") {
+      const container = document.getElementById("manufacturersContainer");
+      container.innerHTML = "";
+      const filtered = country === "vsetky"
+        ? data
+        : data.filter(m => m.country === country);
+
+      filtered.forEach(manufacturer => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${manufacturer.logo}" alt="${manufacturer.name}">
+          <h2>${manufacturer.name}</h2>
+          <p><strong>Krajina:</strong> ${manufacturer.country}</p>
+          <p><strong>Zameranie:</strong> ${manufacturer.weaponTypes.join(', ')}</p>
+          <a href="manufacturer-detail.html?name=${encodeURIComponent(manufacturer.name)}">Zobraziť viac</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    fetch("manufacturers.json")
       .then(res => res.json())
       .then(data => {
-        const container = document.getElementById('manufacturersContainer');
-        data.forEach(manufacturer => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <img src="${manufacturer.logo}" alt="${manufacturer.name}">
-            <h2>${manufacturer.name}</h2>
-            <p><strong>Krajina:</strong> ${manufacturer.country}</p>
-            <p><strong>Zameranie:</strong> ${manufacturer.weaponTypes.join(', ')}</p>
-            <a href="manufacturer-detail.html?name=${encodeURIComponent(manufacturer.name)}">Zobraziť viac</a>
-          `;
-          container.appendChild(card);
+        allManufacturers = data;
+        renderManufacturers(data);
+
+        // Naplniť filter krajín
+        const countries = [...new Set(data.map(m => m.country))].sort();
+        const filter = document.getElementById("countryFilter");
+        countries.forEach(country => {
+          const option = document.createElement("option");
+          option.value = country;
+          option.textContent = country;
+          filter.appendChild(option);
+        });
+
+        filter.addEventListener("change", () => {
+          renderManufacturers(allManufacturers, filter.value);
         });
       });
   </script>
