@@ -1,14 +1,23 @@
 [
   {
-    "name": "Tikka T1x",
-    "caliber": ".22LR",
-    "type": "Bolt Action",
-    "origin": "Finland"
+    "name": "AK-47",
+    "manufacturer": "Kalashnikov Concern",
+    "caliber": "7.62×39mm",
+    "type": "Assault rifle",
+    "country": "Russia"
+  },
+  {
+    "name": "M4A1",
+    "manufacturer": "Colt's Manufacturing Company",
+    "caliber": "5.56×45mm NATO",
+    "type": "Assault rifle",
+    "country": "USA"
   },
   {
     "name": "Glock 17",
-    "caliber": "9x19mm",
+    "manufacturer": "Glock Ges.m.b.H.",
+    "caliber": "9×19mm Parabellum",
     "type": "Pistol",
-    "origin": "Austria"
+    "country": "Austria"
   }
 ]
