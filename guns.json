@@ -1,23 +1,7002 @@
 [
   {
-    "name": "Glock 17",
-    "manufacturer": "Glock",
-    "caliber": "9×19mm Parabellum",
-    "category": "Handgun",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Glock_17_Gen_4_Pistol.jpg/220px-Glock_17_Gen_4_Pistol.jpg"
-  },
-  {
-    "name": "AK-47",
-    "manufacturer": "Kalashnikov Concern",
-    "caliber": "7.62×39mm",
-    "category": "Rifle",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/AK-47_type_II_Part_DM-ST-89-01131.jpg/220px-AK-47_type_II_Part_DM-ST-89-01131.jpg"
-  },
-  {
-    "name": "M4 Carbine",
+    "name": "CZ 75 1",
+    "caliber": "9×19mm",
     "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 2",
     "caliber": "5.56×45mm NATO",
-    "category": "Rifle",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/M4_Carbine_CQBR.jpg/220px-M4_Carbine_CQBR.jpg"
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 3",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 4",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 5",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 6",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 7",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 8",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 9",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 10",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 11",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 12",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 13",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 14",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 15",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 16",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 17",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 18",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 19",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 20",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 21",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 22",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 23",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 24",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 25",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 26",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 27",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 28",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 29",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 30",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 31",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 32",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 33",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 34",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 35",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 36",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 37",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 38",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 39",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 40",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 41",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 42",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 43",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 44",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 45",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 46",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 47",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 48",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 49",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 50",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 51",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 52",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 53",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 54",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 55",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 56",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 57",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 58",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 59",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 60",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 61",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 62",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 63",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 64",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 65",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 66",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 67",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 68",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 69",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 70",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 71",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 72",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 73",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 74",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 75",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 76",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 77",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 78",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 79",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 80",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 81",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 82",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 83",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 84",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 85",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 86",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 87",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 88",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 89",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 90",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 91",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 92",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 93",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 94",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 95",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 96",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 97",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 98",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 99",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 100",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 101",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 102",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 103",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 104",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 105",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 106",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 107",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 108",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 109",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 110",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 111",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 112",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 113",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 114",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 115",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 116",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 117",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 118",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 119",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 120",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 121",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 122",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 123",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 124",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 125",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 126",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 127",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 128",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 129",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 130",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 131",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 132",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 133",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 134",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 135",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 136",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 137",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 138",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 139",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 140",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 141",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 142",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 143",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 144",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 145",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 146",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 147",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 148",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 149",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 150",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 151",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 152",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 153",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 154",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 155",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 156",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 157",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 158",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 159",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 160",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 161",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 162",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 163",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 164",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 165",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 166",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 167",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 168",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 169",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 170",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 171",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 172",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 173",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 174",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 175",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 176",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 177",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 178",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 179",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 180",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 181",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 182",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 183",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 184",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 185",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 186",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 187",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 188",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 189",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 190",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 191",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 192",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 193",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 194",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 195",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 196",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 197",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 198",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 199",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 200",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 201",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 202",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 203",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 204",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 205",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 206",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 207",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 208",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 209",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 210",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 211",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 212",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 213",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 214",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 215",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 216",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 217",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 218",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 219",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 220",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 221",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 222",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 223",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 224",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 225",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 226",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 227",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 228",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 229",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 230",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 231",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 232",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 233",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 234",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 235",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 236",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 237",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 238",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 239",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 240",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 241",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 242",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 243",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 244",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 245",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 246",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 247",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 248",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 249",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 250",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 251",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 252",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 253",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 254",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 255",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 256",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 257",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 258",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 259",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 260",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 261",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 262",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 263",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 264",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 265",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 266",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 267",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 268",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 269",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 270",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 271",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 272",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 273",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 274",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 275",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 276",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 277",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 278",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 279",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 280",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 281",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 282",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 283",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 284",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 285",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 286",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 287",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 288",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 289",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 290",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 291",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 292",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 293",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 294",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 295",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 296",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 297",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 298",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 299",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 300",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 301",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 302",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 303",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 304",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 305",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 306",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 307",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 308",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 309",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 310",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 311",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 312",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 313",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 314",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 315",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 316",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 317",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 318",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 319",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 320",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 321",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 322",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 323",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 324",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 325",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 326",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 327",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 328",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 329",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 330",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 331",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 332",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 333",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 334",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 335",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 336",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 337",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 338",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 339",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 340",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 341",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 342",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 343",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 344",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 345",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 346",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 347",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 348",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 349",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 350",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 351",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 352",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 353",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 354",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 355",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 356",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 357",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 358",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 359",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 360",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 361",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 362",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 363",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 364",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 365",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 366",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 367",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 368",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 369",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 370",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 371",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 372",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 373",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 374",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 375",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 376",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 377",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 378",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 379",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 380",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 381",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 382",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 383",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 384",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 385",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 386",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 387",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 388",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 389",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 390",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 391",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 392",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 393",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 394",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 395",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 396",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 397",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 398",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 399",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 400",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 401",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 402",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 403",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 404",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 405",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 406",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 407",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 408",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 409",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 410",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 411",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 412",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 413",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 414",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 415",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 416",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 417",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 418",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 419",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 420",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 421",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 422",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 423",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 424",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 425",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 426",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 427",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 428",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 429",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 430",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 431",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 432",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 433",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 434",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 435",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 436",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 437",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 438",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 439",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 440",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 441",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 442",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 443",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 444",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 445",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 446",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 447",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 448",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 449",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 450",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 451",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 452",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 453",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 454",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 455",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 456",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 457",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 458",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 459",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 460",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 461",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 462",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 463",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 464",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 465",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 466",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 467",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 468",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 469",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 470",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 471",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 472",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 473",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 474",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 475",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 476",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 477",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 478",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 479",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 480",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 481",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 482",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 483",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 484",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 485",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 486",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 487",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 488",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 489",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 490",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 491",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 492",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 493",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 494",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 495",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 496",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 497",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 498",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 499",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 500",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 501",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 502",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 503",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 504",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 505",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 506",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 507",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 508",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 509",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 510",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 511",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 512",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 513",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 514",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 515",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 516",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 517",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 518",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 519",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 520",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 521",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 522",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 523",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 524",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 525",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 526",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 527",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 528",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 529",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 530",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 531",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 532",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 533",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 534",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 535",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 536",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 537",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 538",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 539",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 540",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 541",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 542",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 543",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 544",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 545",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 546",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 547",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 548",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 549",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 550",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 551",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 552",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 553",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 554",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 555",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 556",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 557",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 558",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 559",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 560",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 561",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 562",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 563",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 564",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 565",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 566",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 567",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 568",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 569",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 570",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 571",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 572",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 573",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 574",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 575",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 576",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 577",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 578",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 579",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 580",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 581",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 582",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 583",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 584",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 585",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 586",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 587",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 588",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 589",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 590",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 591",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 592",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 593",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 594",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 595",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 596",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 597",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 598",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 599",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 600",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 601",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 602",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 603",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 604",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 605",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 606",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 607",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 608",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 609",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 610",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 611",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 612",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 613",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 614",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 615",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 616",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 617",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 618",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 619",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 620",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 621",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 622",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 623",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 624",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 625",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 626",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 627",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 628",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 629",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 630",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 631",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 632",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 633",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 634",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 635",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 636",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 637",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 638",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 639",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 640",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 641",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 642",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 643",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 644",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 645",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 646",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 647",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 648",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 649",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 650",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 651",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 652",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 653",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 654",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 655",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 656",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 657",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 658",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 659",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 660",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 661",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 662",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 663",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 664",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 665",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 666",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 667",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 668",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 669",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 670",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 671",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 672",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 673",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 674",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 675",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 676",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 677",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 678",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 679",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 680",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 681",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 682",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 683",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 684",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 685",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 686",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 687",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 688",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 689",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 690",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 691",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 692",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 693",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 694",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 695",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 696",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 697",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 698",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 699",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 700",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 701",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 702",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 703",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 704",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 705",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 706",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 707",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 708",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 709",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 710",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 711",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 712",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 713",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 714",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 715",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 716",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 717",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 718",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 719",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 720",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 721",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 722",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 723",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 724",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 725",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 726",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 727",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 728",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 729",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 730",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 731",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 732",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 733",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 734",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 735",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 736",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 737",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 738",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 739",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 740",
+    "caliber": "7.62×39mm",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 741",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 742",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 743",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 744",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 745",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 746",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 747",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 748",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 749",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 750",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 751",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 752",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 753",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 754",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 755",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 756",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 757",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 758",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 759",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 760",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 761",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 762",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 763",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 764",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 765",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 766",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 767",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 768",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 769",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 770",
+    "caliber": ".50 AE",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 771",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 772",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 773",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 774",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 775",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 776",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 777",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 778",
+    "caliber": ".40 S&W",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 779",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 780",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 781",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 782",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 783",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 784",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 785",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 786",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 787",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 788",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 789",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 790",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 791",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 792",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 793",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 794",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Beretta M9 795",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 796",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 797",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 798",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 799",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Heckler & Koch MP5 800",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 801",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 802",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 803",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 804",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 805",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 806",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 807",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 808",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 809",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 810",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 811",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 812",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 813",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 814",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "M16A2 815",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 816",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 817",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 818",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "USA",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 819",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 820",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 821",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 822",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 823",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 824",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 825",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 826",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 827",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 828",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 829",
+    "caliber": ".40 S&W",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 830",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 831",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 832",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 833",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 834",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 835",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 836",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 837",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 838",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "IMI",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 839",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 840",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 841",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "CZ 75 842",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 843",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 844",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 845",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 846",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 847",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 848",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 849",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 850",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 851",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 852",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 853",
+    "caliber": "7.62×39mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 854",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 855",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 856",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 857",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 858",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 859",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 860",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 861",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 862",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 863",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 864",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 865",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 866",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 867",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 868",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 869",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "AK-47 870",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 871",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 872",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 873",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 874",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 875",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 876",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 877",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 878",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Uzi 879",
+    "caliber": "9×19mm",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 880",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "SIG SG 550 881",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Česko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 882",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Desert Eagle 883",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 884",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 885",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 886",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 887",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 888",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 889",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 890",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 891",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 892",
+    "caliber": ".40 S&W",
+    "manufacturer": "Glock",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 893",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 894",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 895",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "FN SCAR-L 896",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 897",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Desert Eagle 898",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Glock 17 899",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 900",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rusko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 901",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 902",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Beretta M9 903",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Heckler & Koch MP5 904",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Nemecko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 905",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 906",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 907",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 908",
+    "caliber": ".50 AE",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 909",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 910",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Beretta M9 911",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 912",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 913",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 914",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Glock 17 915",
+    "caliber": "9×19mm",
+    "manufacturer": "IMI",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 916",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 917",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 918",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "SIG SG 550 919",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 920",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 921",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 922",
+    "caliber": ".40 S&W",
+    "manufacturer": "SIG Sauer",
+    "country": "Švajčiarsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 923",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 924",
+    "caliber": ".45 ACP",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 925",
+    "caliber": ".40 S&W",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 926",
+    "caliber": ".50 AE",
+    "manufacturer": "Heckler & Koch",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "Heckler & Koch MP5 927",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Beretta M9 928",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 929",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 930",
+    "caliber": "7.62×39mm",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 931",
+    "caliber": "9×19mm",
+    "manufacturer": "FN Herstal",
+    "country": "Švajčiarsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 932",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 933",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 934",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 935",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 936",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 937",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 938",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Heckler & Koch MP5 939",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 940",
+    "caliber": ".45 ACP",
+    "manufacturer": "FN Herstal",
+    "country": "Belgicko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 941",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Uzi 942",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Glock",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 943",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Desert Eagle 944",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Desert Eagle 945",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "M16A2 946",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 947",
+    "caliber": ".45 ACP",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 948",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 949",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 950",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "FN Herstal",
+    "country": "Rakúsko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 951",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 952",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 953",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Colt",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 954",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 955",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 956",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 957",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "Česko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 958",
+    "caliber": ".45 ACP",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 959",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 960",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 961",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Uzi 962",
+    "caliber": "9×19mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "USA",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "CZ 75 963",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "CZ 75 964",
+    "caliber": ".45 ACP",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 965",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 966",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 967",
+    "caliber": ".45 ACP",
+    "manufacturer": "Beretta",
+    "country": "Nemecko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 968",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Švajčiarsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "SIG SG 550 969",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 970",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "FN SCAR-L 971",
+    "caliber": ".40 S&W",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 972",
+    "caliber": ".45 ACP",
+    "manufacturer": "Colt",
+    "country": "USA",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Heckler & Koch MP5 973",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Glock",
+    "country": "Belgicko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "SIG SG 550 974",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "M16A2 975",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "Uzi 976",
+    "caliber": ".50 AE",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Uzi 977",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Izhmash",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "AK-47 978",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Taliansko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "M16A2 979",
+    "caliber": ".50 AE",
+    "manufacturer": "FN Herstal",
+    "country": "Izrael",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "AK-47 980",
+    "caliber": ".50 AE",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Beretta M9 981",
+    "caliber": ".50 AE",
+    "manufacturer": "SIG Sauer",
+    "country": "Rusko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 982",
+    "caliber": "9×19mm",
+    "manufacturer": "SIG Sauer",
+    "country": "Belgicko",
+    "type": "Samopal"
+  },
+  {
+    "name": "AK-47 983",
+    "caliber": ".45 ACP",
+    "manufacturer": "SIG Sauer",
+    "country": "USA",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 984",
+    "caliber": ".40 S&W",
+    "manufacturer": "Izhmash",
+    "country": "Izrael",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 985",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "Colt",
+    "country": "Izrael",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 986",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Švajčiarsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 987",
+    "caliber": "9×19mm",
+    "manufacturer": "Beretta",
+    "country": "Rakúsko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "AK-47 988",
+    "caliber": "9×19mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "M16A2 989",
+    "caliber": "9×19mm",
+    "manufacturer": "Glock",
+    "country": "Česko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "FN SCAR-L 990",
+    "caliber": ".50 AE",
+    "manufacturer": "IMI",
+    "country": "Rakúsko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "CZ 75 991",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Nemecko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 992",
+    "caliber": ".45 ACP",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Odstreľovačka"
+  },
+  {
+    "name": "Glock 17 993",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Heckler & Koch",
+    "country": "Česko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Desert Eagle 994",
+    "caliber": ".50 AE",
+    "manufacturer": "Beretta",
+    "country": "Belgicko",
+    "type": "Brokovnica"
+  },
+  {
+    "name": "CZ 75 995",
+    "caliber": "7.62×51mm NATO",
+    "manufacturer": "Heckler & Koch",
+    "country": "Taliansko",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "FN SCAR-L 996",
+    "caliber": "5.56×45mm NATO",
+    "manufacturer": "IMI",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "Glock 17 997",
+    "caliber": ".40 S&W",
+    "manufacturer": "Colt",
+    "country": "Nemecko",
+    "type": "Samopal"
+  },
+  {
+    "name": "SIG SG 550 998",
+    "caliber": ".40 S&W",
+    "manufacturer": "Beretta",
+    "country": "Izrael",
+    "type": "Útočná puška"
+  },
+  {
+    "name": "Glock 17 999",
+    "caliber": "7.62×39mm",
+    "manufacturer": "Česká zbrojovka",
+    "country": "Rusko",
+    "type": "Pištoľ"
+  },
+  {
+    "name": "FN SCAR-L 1000",
+    "caliber": "9×19mm",
+    "manufacturer": "Izhmash",
+    "country": "Nemecko",
+    "type": "Samopal"
   }
 ]
