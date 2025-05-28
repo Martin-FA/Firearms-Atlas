@@ -114,8 +114,13 @@ function translatePage() {
   const lang = getLanguage();
   document.querySelectorAll('[data-translate]').forEach(el => {
     const key = el.getAttribute('data-translate');
-    if (translations[lang] && translations[lang][key]) {
-      el.innerText = translations[lang][key];
+    const translation = translations[lang] && translations[lang][key];
+    if (translation) {
+      if (el.placeholder !== undefined) {
+        el.placeholder = translation;
+      } else {
+        el.innerText = translation;
+      }
     }
   });
 }
