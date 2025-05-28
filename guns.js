@@ -35,7 +35,7 @@ function displayGuns(data) {
     container.appendChild(card);
   });
 
-  translatePage(); // aplikuj preklad po načítaní
+  translatePage();
 }
 
 function showGunDetails(name) {
