@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', loadAmmoDetail);
+
 function loadAmmoDetail() {
   const urlParams = new URLSearchParams(window.location.search);
   const ammoId = urlParams.get('id');
@@ -6,26 +8,28 @@ function loadAmmoDetail() {
     .then(response => response.json())
     .then(data => {
       const ammo = data.find(item => item.id === ammoId);
+      const container = document.getElementById('ammoDetail');
+
       if (!ammo) {
-        document.getElementById('detailContainer').innerHTML = '<p>Strelivo nebolo nájdené.</p>';
+        container.innerHTML = '<p>Ammo not found.</p>';
         return;
       }
 
-      const container = document.getElementById('detailContainer');
       container.innerHTML = `
         <div class="card">
           <img src="${ammo.image}" alt="${ammo.name}" />
           <h2>${ammo.name}</h2>
-          <p><strong>Kaliber:</strong> ${ammo.caliber}</p>
-          <p><strong>Krajina pôvodu:</strong> ${ammo.country}</p>
-          <p><strong>Účel použitia:</strong> ${ammo.purpose}</p>
-          <p><strong>Typ:</strong> ${ammo.type}</p>
-          <p><strong>Popis:</strong> ${ammo.description}</p>
+          <p><strong>Caliber:</strong> ${ammo.caliber}</p>
+          <p><strong>Country of Origin:</strong> ${ammo.country}</p>
+          <p><strong>Purpose:</strong> ${ammo.purpose}</p>
+          <p><strong>Type:</strong> ${ammo.type}</p>
+          <p><strong>Description:</strong> ${ammo.description}</p>
         </div>
       `;
     })
     .catch(error => {
-      console.error('Chyba pri načítaní streliva:', error);
-      document.getElementById('detailContainer').innerHTML = '<p>Chyba pri načítaní detailu streliva.</p>';
+      console.error('Error loading ammo details:', error);
+      document.getElementById('ammoDetail').innerHTML = '<p>Error loading ammo detail.</p>';
     });
 }
+
