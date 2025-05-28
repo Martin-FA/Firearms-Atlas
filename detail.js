@@ -1,54 +1,38 @@
-function getLanguage() {
-  return localStorage.getItem("language") || "sk";
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const gunId = urlParams.get('id');
+  const container = document.getElementById('gunDetail');
 
-function translateText(textObj, lang) {
-  return textObj?.[lang] || textObj?.["sk"] || "";
-}
-
-function loadDetail() {
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
-
-  if (!id) {
-    document.getElementById("detailContainer").innerHTML = `<p>Žiadne ID zbrane nebolo zadané.</p>`;
+  if (!gunId) {
+    container.innerHTML = '<p>Missing gun ID in URL.</p>';
     return;
   }
 
-  fetch("guns.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const gun = data.find((g) => g.id === id);
+  fetch('guns.json')
+    .then(response => response.json())
+    .then(data => {
+      const gun = data.find(item => item.id === gunId);
       if (!gun) {
-        document.getElementById("detailContainer").innerHTML = `<p>Zbraň s ID ${id} neexistuje.</p>`;
+        container.innerHTML = '<p>Gun not found.</p>';
         return;
       }
 
-      const lang = getLanguage();
-
-      const name = translateText(gun.name, lang);
-      const manufacturer = translateText(gun.manufacturer, lang);
-      const category = translateText(gun.category, lang);
-      const caliber = translateText(gun.caliber, lang);
-      const description = translateText(gun.description, lang);
-
-      document.getElementById("detailContainer").innerHTML = `
-        <div class="card">
-          <img src="${gun.image}" alt="${name}" />
-          <h2>${name}</h2>
-          <p><strong data-translate="manufacturer">Výrobca:</strong> ${manufacturer}</p>
-          <p><strong data-translate="caliber">Kaliber:</strong> ${caliber}</p>
-          <p><strong data-translate="category">Kategória:</strong> ${category}</p>
-          <p>${description}</p>
+      container.innerHTML = `
+        <div class="card detail-card">
+          <img src="${gun.image}" alt="${gun.name}" class="card-img-large" />
+          <h2>${gun.name}</h2>
+          <p><strong>Type:</strong> ${gun.type}</p>
+          <p><strong>Origin:</strong> ${gun.origin}</p>
+          <p><strong>Year:</strong> ${gun.year}</p>
+          <p><strong>Caliber:</strong> ${gun.caliber}</p>
+          <p><strong>Ammo:</strong> ${gun.ammo}</p>
+          <p>${gun.description}</p>
         </div>
       `;
-
-      if (typeof translatePage === "function") {
-        translatePage();
-      }
     })
-    .catch((error) => {
-      document.getElementById("detailContainer").innerHTML = `<p>Chyba pri načítaní detailov.</p>`;
-      console.error("Chyba načítania JSON:", error);
+    .catch(error => {
+      console.error('Error loading gun details:', error);
+      container.innerHTML = '<p>Error loading gun detail.</p>';
     });
-}
+});
+
