@@ -28,10 +28,21 @@
   <main>
     <h1 id="title">Welcome to Firearms Atlas</h1>
     <p id="intro">Explore detailed information about firearms from around the world.</p>
+
+    <!-- 🔎 Vyhľadávač -->
+    <div class="search-bar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search firearms..."
+        oninput="handleSearch(this.value)"
+      />
+    </div>
   </main>
 
-  <!-- 🔶 SKRIPT PRE JAZYKOVÉ PREKLADY -->
+  <!-- 🔶 SKRIPT PRE JAZYKOVÉ PREKLADY + VYHĽADÁVANIE -->
   <script>
+    // 🔁 Preklady
     async function applyTranslations(lang) {
       try {
         const response = await fetch('translations.json');
@@ -40,13 +51,14 @@
         if (translations[lang]) {
           document.getElementById('title').textContent = translations[lang].title;
           document.getElementById('intro').textContent = translations[lang].intro;
+          document.getElementById('searchInput').placeholder = translations[lang].searchPlaceholder || "Search firearms...";
         }
       } catch (error) {
         console.error('Translation loading failed:', error);
       }
     }
 
-    // Načítaj jazyk po načítaní stránky
+    // 🔃 Inicializácia jazyka pri načítaní
     window.addEventListener('DOMContentLoaded', () => {
       const savedLang = localStorage.getItem('preferredLanguage') || 'en';
       const languageSelector = document.getElementById('language');
@@ -56,11 +68,18 @@
       applyTranslations(savedLang);
     });
 
-    // Zmena jazyka
+    // 🌐 Zmena jazyka
     function changeLanguage(lang) {
       localStorage.setItem('preferredLanguage', lang);
       applyTranslations(lang);
     }
+
+    // 🔍 Funkcia vyhľadávania (prázdna na teraz)
+    function handleSearch(query) {
+      console.log("Searching for:", query);
+      // Tu neskôr doplníme filtrovanie zoznamu zbraní
+    }
   </script>
 </body>
 </html>
+
