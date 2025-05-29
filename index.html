@@ -5,6 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Štýly pre jazykový výber */
+    .language-selector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px;
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+
+    .language-selector label {
+      font-weight: bold;
+    }
+
+    .language-selector select {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #222;
+    }
+
+    .logo {
+      height: 50px;
+    }
+  </style>
 </head>
 <body>
 
@@ -24,10 +60,29 @@
   </header>
 
   <main>
-    <!-- Tu pokračuje tvoj hlavný obsah stránky -->
+    <h1>Welcome to Firearms Atlas</h1>
+    <p>This will be your main content area.</p>
   </main>
 
-  <script src="script.js"></script>
+  <!-- JavaScript vložený priamo v index.html -->
+  <script>
+    // Funkcia na zmenu jazyka
+    function changeLanguage(lang) {
+      localStorage.setItem('preferredLanguage', lang);
+      location.reload(); // Neskôr môžeš namiesto reload načítať preklady dynamicky
+    }
+
+    // Po načítaní stránky nastav uložený jazyk
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang) {
+        const languageSelector = document.getElementById('language');
+        if (languageSelector) {
+          languageSelector.value = savedLang;
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
-
