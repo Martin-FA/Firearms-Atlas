@@ -5,45 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Štýly pre jazykový výber */
-    .language-selector {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px;
-      font-size: 1rem;
-      color: #f0f0f0;
-    }
-
-    .language-selector label {
-      font-weight: bold;
-    }
-
-    .language-selector select {
-      padding: 5px 10px;
-      border-radius: 5px;
-      border: none;
-      background-color: #333;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .main-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      background-color: #222;
-    }
-
-    .logo {
-      height: 50px;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- 🔶 HLAVIČKA -->
   <header class="main-header">
     <img src="logo.png" alt="Firearms Atlas Logo" class="logo"/>
 
@@ -59,30 +24,43 @@
     </div>
   </header>
 
+  <!-- 🔶 HLAVNÝ OBSAH -->
   <main>
-    <h1>Welcome to Firearms Atlas</h1>
-    <p>This will be your main content area.</p>
+    <h1 id="title">Welcome to Firearms Atlas</h1>
+    <p id="intro">Explore detailed information about firearms from around the world.</p>
   </main>
 
-  <!-- JavaScript vložený priamo v index.html -->
+  <!-- 🔶 SKRIPT PRE JAZYKOVÉ PREKLADY -->
   <script>
-    // Funkcia na zmenu jazyka
-    function changeLanguage(lang) {
-      localStorage.setItem('preferredLanguage', lang);
-      location.reload(); // Neskôr môžeš namiesto reload načítať preklady dynamicky
+    async function applyTranslations(lang) {
+      try {
+        const response = await fetch('translations.json');
+        const translations = await response.json();
+
+        if (translations[lang]) {
+          document.getElementById('title').textContent = translations[lang].title;
+          document.getElementById('intro').textContent = translations[lang].intro;
+        }
+      } catch (error) {
+        console.error('Translation loading failed:', error);
+      }
     }
 
-    // Po načítaní stránky nastav uložený jazyk
+    // Načítaj jazyk po načítaní stránky
     window.addEventListener('DOMContentLoaded', () => {
-      const savedLang = localStorage.getItem('preferredLanguage');
-      if (savedLang) {
-        const languageSelector = document.getElementById('language');
-        if (languageSelector) {
-          languageSelector.value = savedLang;
-        }
+      const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+      const languageSelector = document.getElementById('language');
+      if (languageSelector) {
+        languageSelector.value = savedLang;
       }
+      applyTranslations(savedLang);
     });
-  </script>
 
+    // Zmena jazyka
+    function changeLanguage(lang) {
+      localStorage.setItem('preferredLanguage', lang);
+      applyTranslations(lang);
+    }
+  </script>
 </body>
 </html>
