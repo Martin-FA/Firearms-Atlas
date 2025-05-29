@@ -2,41 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Firearms Atlas – Manufacturers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firearms Atlas</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="lang.js"></script>
-  <script defer src="manufacturers.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Firearms Atlas Logo" class="logo" />
-      <h1 data-translate="manufacturers" class="title">Manufacturers</h1>
+
+  <header class="main-header">
+    <img src="logo.png" alt="Firearms Atlas Logo" class="logo"/>
+
+    <!-- 🔽 Jazykové menu -->
+    <div class="language-selector">
+      <label for="language">🌐 Language:</label>
+      <select id="language" onchange="changeLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="fr">Français</option>
+      </select>
     </div>
   </header>
 
-  <main class="main-content">
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Search..." data-translate="search" />
-      <select id="filterCountry" aria-label="Filter by Country" data-translate="filterByCountry">
-        <option value="" selected>All Countries</option>
-        <!-- Dynamicky pridáš podľa krajín -->
-      </select>
-      <div class="language-buttons">
-        <button onclick="setLanguage('en')">🇬🇧</button>
-        <button onclick="setLanguage('sk')">🇸🇰</button>
-        <button onclick="setLanguage('de')">🇩🇪</button>
-        <button onclick="setLanguage('pl')">🇵🇱</button>
-        <button onclick="setLanguage('fi')">🇫🇮</button>
-        <button onclick="setLanguage('sv')">🇸🇪</button>
-        <button onclick="setLanguage('no')">🇳🇴</button>
-        <button onclick="setLanguage('fr')">🇫🇷</button>
-        <button onclick="setLanguage('es')">🇪🇸</button>
-      </div>
-    </div>
-
-    <div id="manufacturerList" class="card-container"></div>
+  <main>
+    <!-- Tu pokračuje tvoj hlavný obsah stránky -->
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
