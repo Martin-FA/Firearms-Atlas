@@ -1,170 +1,76 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* GLOBAL */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #fff;
-  line-height: 1.5;
-  min-height: 100vh;
-  padding: 10px 15px;
-}
-
-/* HEADER */
-.header {
+/* 🔶 HLAVIČKA – hlavný panel hore */
+.main-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #ff6a00; /* oranžová linka */
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.logo {
-  height: 60px;
-  width: auto;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ff6a00;
-}
-
-/* MAIN CONTENT */
-.main-content {
-  max-width: 960px;
-  margin: 20px auto 50px;
-}
-
-/* CONTROLS */
-.controls {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-
-#searchInput {
-  padding: 10px 15px;
-  font-size: 1.1rem;
-  border: 2px solid #ff6a00;
-  border-radius: 8px;
-  flex: 1 1 220px;
-  min-width: 200px;
-  background-color: #1a1a1a;
-  color: #fff;
-}
-
-#searchInput::placeholder {
-  color: #ff9b4a;
-}
-
-#filterCountry {
-  padding: 10px 15px;
-  font-size: 1.1rem;
-  border: 2px solid #ff6a00;
-  border-radius: 8px;
-  background-color: #1a1a1a;
-  color: #fff;
-  flex: 1 1 180px;
-  min-width: 150px;
-  cursor: pointer;
-}
-
-/* LANGUAGE BUTTONS */
-.language-buttons {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.language-buttons button {
-  background: none;
-  border: none;
-  font-size: 1.7rem;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.language-buttons button:hover,
-.language-buttons button:focus {
-  transform: scale(1.2);
-  outline: none;
-}
-
-/* CARD CONTAINER */
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: #1a1a1a;
-  border-radius: 12px;
   padding: 15px 20px;
-  box-shadow: 0 0 10px #ff6a00;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  background-color: #222;
+  border-bottom: 3px solid #ff6600; /* oranžový prvok */
 }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #ffa451;
+/* 🔶 LOGO */
+.logo {
+  height: 50px;
 }
 
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-  color: #ff6a00;
-}
-
-.card p {
+/* 🔶 DROPDOWN JAZYKOVÉHO VÝBERU */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
   font-size: 1rem;
-  margin-bottom: 4px;
+  color: #ffffff;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-  #searchInput,
-  #filterCountry {
-    flex: 1 1 100%;
-    min-width: unset;
-  }
-
-  .language-buttons {
-    justify-content: center;
-  }
-
-  .card-container {
-    grid-template-columns: 1fr;
-  }
+.language-selector label {
+  font-weight: bold;
+  color: #ffffff;
 }
 
-@media (max-width: 480px) {
-  .logo {
-    height: 50px;
+.language-selector select {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.language-selector select:hover {
+  background-color: #444;
+  border-color: #ff6600;
+}
+
+/* 🔶 HLAVNÝ OBSAH */
+main {
+  padding: 30px 20px;
+  color: #f0f0f0;
+  background-color: #111;
+  min-height: calc(100vh - 100px);
+}
+
+/* 🔶 ZÁKLADNÉ TYPOGRAFICKÉ ŠTÝLY */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* 🔶 RESPONZÍVNY DIZAJN PRE MOBILY */
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .language-buttons button {
-    font-size: 1.5rem;
+  .language-selector {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
   }
 }
